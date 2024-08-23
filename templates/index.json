@@ -111,14 +111,14 @@
         "heading_rHc6ae": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Meet our Moko vet",
             "heading_size": "h1"
           }
         },
         "text_e7JP6h": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
             "text_style": "body"
           }
         },
@@ -137,6 +137,7 @@
         "button_aWzQw7"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-06-07_at_12.38.39_PM.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -157,14 +158,14 @@
         "heading_mhUnhV": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Hot dogs and hot paws! These summer essentials can protect your dog's paws.",
             "heading_size": "h1"
           }
         },
         "text_kcLj6G": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Lorem Ipsum<strong> <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
             "text_style": "body"
           }
         },
@@ -183,6 +184,7 @@
         "button_QpGiWW"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/lighter.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
