@@ -125,7 +125,7 @@
         "button_aWzQw7": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Learn more",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -138,8 +138,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2024-06-07_at_12.38.39_PM.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
+        "height": "medium",
+        "desktop_image_width": "large",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
@@ -172,7 +172,7 @@
         "button_QpGiWW": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Read more",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -186,7 +186,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/lighter.jpg",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "large",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
