@@ -47,9 +47,68 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
+    },
+    "collection_list_jLm6xQ": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_66AbGx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skin-irritation"
+          }
+        },
+        "featured_collection_P7RRQG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wound-care"
+          }
+        },
+        "featured_collection_f9jpam": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "daily-maintenance"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_66AbGx",
+        "featured_collection_P7RRQG",
+        "featured_collection_f9jpam"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_hH6ek9": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "image_banner"
+    "image_banner",
+    "collection_list_jLm6xQ",
+    "featured_blog_hH6ek9"
   ]
 }
