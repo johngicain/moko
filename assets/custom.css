@@ -85,6 +85,10 @@
   background: transparent;
 }
 
+.shopify-section-header-sticky .header--transparent {
+  background: var(--gradient-background);
+}
+
 @media screen and (min-width: 750px) {
   .blog__inner-row {
     display: grid;
@@ -154,15 +158,15 @@
   }
 
   .btn__width--2x {
-    width: 12rem;
+    width: 20rem;
   }
 
   .btn__width--3x {
-    width: 18rem;
+    width: 25rem;
   }
 
   .btn__width--4x {
-    width: 24rem;
+    width: 35rem;
   }
 }
 
@@ -252,10 +256,12 @@ p.product-name {
   left: -18px;
   transform: rotate(90deg);
 }
+
 .slider-image {
   display: flex;
   justify-content: end;
 }
+
 .main-slider-div-review {
   padding-top: 0 !important;
 }

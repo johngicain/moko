@@ -142,7 +142,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %} btn__width--{{ block.settings.button_width }}"
                 >
                   {{- block.settings.button_label_1 | escape -}}
                 </a>
@@ -476,6 +476,30 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_2.label"
+        },
+        {
+          "type": "select",
+          "id": "button_width",
+          "label": "Button width",
+          "default": "default",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "2x",
+              "label": "2x"
+            },
+            {
+              "value": "3x",
+              "label": "3x"
+            },
+            {
+              "value": "4x",
+              "label": "4x"
+            }
+          ]
         }
       ]
     }
