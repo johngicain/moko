@@ -20,7 +20,8 @@
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": false,
+            "button_width": "4x"
           }
         }
       },
@@ -86,7 +87,7 @@
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
-        "blog": "",
+        "blog": "news",
         "post_limit": 3,
         "columns_desktop": 3,
         "color_scheme": "scheme-59a16aa5-730e-4bab-97db-de2d65493825",
