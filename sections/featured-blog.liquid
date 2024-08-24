@@ -25,7 +25,7 @@
   endif
 -%}
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
-  <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
+  <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding {% if section.settings.row_layout == true %}section__row-layout{% endif %}">
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2
@@ -49,6 +49,16 @@
             {{ 'sections.featured_blog.view_all' | t }}
           </a>
         {%- endif -%}
+        {% if section.settings.button_label != blank %}
+          <a
+            href="{{ section.settings.button_link }}"
+            id="ViewAll-{{ section.id }}"
+            class="blog__button button button--secondary"
+            aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
+          >
+            {{ section.settings.button_label }}
+          </a>
+        {% endif %}
       </div>
     {%- endunless -%}
 
@@ -148,12 +158,12 @@
           >
             {% render 'icon-caret' %}
           </button>
-          <div class="slider-counter caption">
+          {% comment %} <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
             <span aria-hidden="true"> / </span>
             <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
             <span class="slider-counter--total">{{ section.settings.post_limit }}</span>
-          </div>
+          </div> {% endcomment %}
           <button
             type="button"
             class="slider-button slider-button--next"
@@ -195,6 +205,12 @@
   },
   "settings": [
     {
+      "type": "checkbox",
+      "id": "row_layout",
+      "default": false,
+      "label": "Enable row layout"
+    },
+    {
       "type": "inline_richtext",
       "id": "heading",
       "default": "t:sections.featured-blog.settings.heading.default",
@@ -227,6 +243,17 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "t:sections.multicolumn.settings.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.multicolumn.settings.button_link.label"
     },
     {
       "type": "blog",

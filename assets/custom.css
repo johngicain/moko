@@ -89,50 +89,64 @@
   background: var(--gradient-background);
 }
 
+.blog .article-card .card__information {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.article-card .card__information .full-unstyled-link {
+  font-family: "aeonikregular";
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 70% 8%;
+  grid-gap: 22%;
+}
+
+.article-card .card__inner {
+  height: 250px;
+}
+
+.blog .blog__posts {
+  margin-top: 0;
+}
+
+.blog .blog__title {
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.blog .slider-buttons {
+  position: absolute;
+  right: 0;
+  bottom: -3.5rem;
+}
+
 @media screen and (min-width: 750px) {
-  .blog__inner-row {
+  .blog .slider-buttons {
+    right: 1rem;
+    bottom: -2.5rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .blog .slider-buttons {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .section__row-layout {
     display: grid;
+    grid-template-columns: 30% 69%;
+    grid-column-gap: 1%;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .section__row-layout {
     grid-template-columns: 25% 70%;
     grid-column-gap: 5%;
-  }
-
-  .blog__inner-row .blog-posts__grid-overflow {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: inherit;
-    overflow-x: auto;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -webkit-transform: translate3d(0, 0, 0);
-    /* -ms-overflow-style: none; /* IE and Edge */
-    /* scrollbar-width: none; /* Firefox */
-  }
-
-  .blog__inner-row .blog-posts__grid-overflow::-webkit-scrollbar {
-    background-color: transparent;
-    height: 10px;
-  }
-
-  .blog__inner-row .blog-posts__grid-overflow::-webkit-scrollbar-thumb {
-    background: rgba(1, 1, 1, 0.5);
-    border-radius: 3rem;
-  }
-
-  .blog-posts__grid {
-    padding-bottom: 2rem;
-    display: flex;
-    gap: 1rem;
-  }
-
-  .blog-posts__grid .blog-posts__grid ::-webkit-scrollbar {
-    display: none;
-  }
-
-  .blog__inner-row .blog-posts__grid .blog-posts__item {
-    width: 250px;
-    scroll-snap-align: start;
   }
 }
 
