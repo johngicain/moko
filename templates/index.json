@@ -198,37 +198,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "review_slider_CBdeQB": {
-      "type": "review-slider",
-      "blocks": {
-        "group_DCrEhc": {
-          "type": "group",
-          "settings": {
-            "review-image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.32.56_AM.png",
-            "review-title": "This is paw-some!",
-            "review-des": "<p><strong>Lorem Ipsum <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
-            "user-designation": "",
-            "product-name": ""
-          }
-        },
-        "group_eVMbFi": {
-          "type": "group",
-          "settings": {
-            "review-image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
-            "review-title": "Paw saver",
-            "review-des": "<p><strong>Lorem Ipsum <\/strong>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
-            "user-designation": "",
-            "product-name": ""
-          }
-        }
-      },
-      "block_order": [
-        "group_DCrEhc",
-        "group_eVMbFi"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -236,7 +205,6 @@
     "collection_list_jLm6xQ",
     "featured_blog_hH6ek9",
     "image_with_text_TyMCFJ",
-    "image_with_text_MrUyEY",
-    "review_slider_CBdeQB"
+    "image_with_text_MrUyEY"
   ]
 }
