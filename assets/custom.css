@@ -102,6 +102,10 @@
   grid-gap: 22%;
 }
 
+.article-card .card__information .full-unstyled-link .icon {
+  margin-top: 3px;
+}
+
 .article-card .card__inner {
   height: 250px;
 }
