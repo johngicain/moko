@@ -85,11 +85,11 @@
     "featured_blog_hH6ek9": {
       "type": "featured-blog",
       "settings": {
-        "row_layout": false,
-        "heading": "Blog posts",
+        "row_layout": true,
+        "heading": "Nuture you dog with the healing force of nature",
         "heading_size": "h1",
-        "button_label": "Button label",
-        "button_link": "",
+        "button_label": "Who we are",
+        "button_link": "\/pages\/about",
         "blog": "news",
         "post_limit": 4,
         "columns_desktop": 3,
