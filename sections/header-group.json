@@ -38,6 +38,7 @@
     "header": {
       "type": "header",
       "settings": {
+        "nav_transparent": true,
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "drawer",
