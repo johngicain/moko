@@ -1,0 +1,111 @@
+{{ 'custom.css' | asset_url | stylesheet_tag }}
+
+<section>
+    <div class="main-slider-div-review">
+        <div class="review-secound-slider-div">
+            <div class="owl-carousel owl-theme home-testimonial-slider">
+              {% for block in section.blocks %}
+                <div class="item">
+                    <div class="row-slider-review">
+                        <div class="col-slider-image">
+                            <div class="slider-image">
+                                <img class="product-image" src="{{ block.settings.review-image | image_url: width: master }}">
+                            </div>
+                        </div>
+                        <div class="col-slider-content">
+                            <div class="content-slider-style">
+                                <img class="star-image" src="{{ block.settings.review-stars | image_url: width: master }}">
+                                <h2 class="review-title">{{ block.settings.review-title }}</h2>
+                                <div class="content-discruption"><div class="rev-adn-78">{{ block.settings.review-des }}</div></div>
+                                <h6 class="user-title"><span>{{ block.settings.user-designation }}</span></h6>
+                                <p class="product-name"><span>{{ block.settings.product-name }}</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+<script>
+  var owl = $('.owl-carousel.home-testimonial-slider');
+  owl.owlCarousel({
+      items:1, 
+      loop:true,
+      dots:false,
+      nav: false, // Change from 'arrow' to 'nav' to hide navigation arrows
+      margin:10,
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
+      responsive:{
+        0:{
+          items:1 // Display one item on small devices
+        },
+        768:{
+          items:1 // Display one item on medium devices
+        },
+        992:{
+          items:1 // Display one item on large devices
+        }
+    }
+  });
+
+</script>
+{% schema %}
+{
+"name": "Review Slider",
+"max_blocks": 5,
+"settings": [
+    
+],
+  	"blocks": [
+     {
+       "name": "Add Review",
+       "type": "group",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "review-image",
+           "label": "Review Main Image"
+         },
+         {
+           "type": "image_picker",
+           "id": "review-stars",
+           "label": "Review Stars Image"
+         },
+         {
+           "type": "inline_richtext",
+           "id": "review-title",
+           "label": "Review Title"
+         },
+         {
+           "type": "richtext",
+           "id": "review-des",
+           "label": "Review Descruption"
+         },
+         {
+           "type": "text",
+           "id": "user-designation",
+           "label": "User Designation"
+         },
+         {
+           "type": "text",
+           "id": "product-name",
+           "label": "Product Name"
+         }
+       ]
+     }
+   ],
+"presets": [
+{
+"name": "Review Slider",
+"category": "ADVANCED LAYOUT"
+}
+]
+}
+{% endschema %}
