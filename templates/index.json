@@ -84,6 +84,9 @@
     },
     "featured_blog_hH6ek9": {
       "type": "featured-blog",
+      "custom_css": [
+        ".blog__title {color: #AA785D;}"
+      ],
       "settings": {
         "row_layout": true,
         "heading": "Nuture you dog with the healing force of nature",
