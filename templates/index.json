@@ -85,10 +85,13 @@
     "featured_blog_hH6ek9": {
       "type": "featured-blog",
       "settings": {
+        "row_layout": false,
         "heading": "Blog posts",
         "heading_size": "h1",
+        "button_label": "Button label",
+        "button_link": "",
         "blog": "news",
-        "post_limit": 3,
+        "post_limit": 4,
         "columns_desktop": 3,
         "color_scheme": "scheme-59a16aa5-730e-4bab-97db-de2d65493825",
         "show_image": true,
