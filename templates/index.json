@@ -164,10 +164,21 @@
             "author": "<strong>Bess & Nacho<\/strong>",
             "rating": "five"
           }
+        },
+        "reviews_NtQdGB": {
+          "type": "reviews",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
+            "title": "Paw saver",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "author": "<strong>Millie P<\/strong>",
+            "rating": "five"
+          }
         }
       },
       "block_order": [
-        "reviews_HRWc7e"
+        "reviews_HRWc7e",
+        "reviews_NtQdGB"
       ],
       "settings": {
         "title": "",
