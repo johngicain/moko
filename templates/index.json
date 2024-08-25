@@ -158,9 +158,10 @@
         "reviews_HRWc7e": {
           "type": "reviews",
           "settings": {
-            "title": "Reviews",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.32.56_AM.png",
+            "title": "This is paw-some!",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "author": "",
+            "author": "<strong>Bess & Nacho<\/strong>",
             "rating": "five"
           }
         }
