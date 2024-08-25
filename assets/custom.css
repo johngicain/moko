@@ -332,6 +332,7 @@
 }
 
 .review-list .ratings {
+  margin-bottom: 1.5rem;
   display: block;
 }
 
@@ -339,7 +340,7 @@
   font-size: 3rem;
   font-weight: bold;
   max-width: 70%;
-  margin: 0 0 0.5rem;
+  margin: 0 0 2rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -355,6 +356,7 @@
 @media screen and (min-width: 990px) {
   .review-list .multicolumn-card__info h3.inline-richtext {
     font-size: 4rem;
+    line-height: 3.5rem;
   }
 }
 
