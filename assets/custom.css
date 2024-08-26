@@ -365,6 +365,21 @@
   display: none;
 }
 
+.image-with-text__text {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.image-with-text__content--small .image-with-text__heading {
+  line-height: 3.2rem;
+}
+
+@media screen and (max-width: 749px) {
+  .image-with-text__grid {
+    flex-direction: column-reverse;
+  }
+}
+
 @media screen and (min-width: 1025px) {
   .footer .email-enabled {
     display: grid;

@@ -2,8 +2,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.35 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.35 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -78,7 +78,7 @@
                     class="image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}"
                     {{ block.shopify_attributes }}
                   >
-                    {{ block.settings.caption | escape }}
+                    {{ block.settings.caption }}
                   </p>
                 {%- when 'text' -%}
                   <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
@@ -371,7 +371,7 @@
       "limit": 1,
       "settings": [
         {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "caption",
           "default": "t:sections.image-with-text.blocks.caption.settings.text.default",
           "label": "t:sections.image-with-text.blocks.caption.settings.text.label"
