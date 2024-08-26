@@ -108,6 +108,14 @@
     "image_with_text_TyMCFJ": {
       "type": "image-with-text",
       "blocks": {
+        "caption_hYQVFj": {
+          "type": "caption",
+          "settings": {
+            "caption": "Dr Ernie Ward, DVM, CVFT",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
         "heading_rHc6ae": {
           "type": "heading",
           "settings": {
@@ -132,6 +140,7 @@
         }
       },
       "block_order": [
+        "caption_hYQVFj",
         "heading_rHc6ae",
         "text_e7JP6h",
         "button_aWzQw7"
