@@ -16,7 +16,6 @@
       "blocks": {
         "email_sign_up_UbQJz3": {
           "type": "email_sign_up",
-          "disabled": true,
           "settings": {
             "newsletter_heading": "Quick links",
             "show_social": true
