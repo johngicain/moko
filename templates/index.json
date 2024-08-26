@@ -79,7 +79,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 80,
-        "padding_bottom": 60
+        "padding_bottom": 80
       }
     },
     "featured_blog_hH6ek9": {
@@ -111,7 +111,7 @@
         "caption_hYQVFj": {
           "type": "caption",
           "settings": {
-            "caption": "Dr Ernie Ward, DVM, CVFT",
+            "caption": "<strong>Dr Ernie Ward, DVM, CVFT<\/strong>",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -214,7 +214,7 @@
         "caption_FPpTJR": {
           "type": "caption",
           "settings": {
-            "caption": "Moko Moments Journal",
+            "caption": "<strong>Moko Moments Journal<\/strong>",
             "text_style": "subtitle",
             "text_size": "medium"
           }
