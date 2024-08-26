@@ -317,6 +317,8 @@
       "settings": {
         "title": "Show us your fur baby!",
         "heading_size": "h1",
+        "text": "<p>Tag us at @mokopet<\/p>",
+        "text_style": "body",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 4,
