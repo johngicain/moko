@@ -22,7 +22,7 @@
 }
 
 .image-with-text__media--small {
-  height: 19.4rem;
+  height: 40rem;
 }
 
 .image-with-text__media--medium {
@@ -34,9 +34,9 @@
 }
 
 @media screen and (min-width: 750px) {
-  .image-with-text__media--small {
-    height: 35rem;
-  }
+  /* .image-with-text__media--small {
+    height: 40rem;
+  } */
 
   .image-with-text__media--medium {
     height: 46rem;
