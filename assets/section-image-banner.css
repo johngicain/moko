@@ -107,6 +107,10 @@
     min-height: 72rem;
   }
 
+  .banner--extralarge:not(.banner--adapt) {
+    min-height: 95rem;
+  }
+
   .banner__content.banner__content--top-left {
     align-items: flex-start;
     justify-content: flex-start;
