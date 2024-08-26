@@ -2264,6 +2264,7 @@ input[type="checkbox"] {
 }
 
 .announcement-bar__message {
+  font-family: "aeonikregular";
   text-align: center;
   padding: 1rem 0;
   margin: 0;
