@@ -105,60 +105,56 @@
         "padding_bottom": 100
       }
     },
-    "image_with_text_ELMKEb": {
-      "type": "image-with-text",
+    "image_with_text_three_column_KfqrgQ": {
+      "type": "image-with-text-three-column",
       "blocks": {
-        "caption_kP8CQD": {
-          "type": "caption",
-          "settings": {
-            "caption": "<strong>Our hero ingredient<\/strong>",
-            "text_style": "subtitle",
-            "text_size": "medium"
-          }
-        },
-        "heading_cA6TMH": {
+        "heading_7zabrQ": {
           "type": "heading",
           "settings": {
-            "heading": "MAGICAL MANUKA HONEY",
+            "heading": "Image with text",
             "heading_size": "h1"
           }
         },
-        "text_yQUQiy": {
+        "text_VFcgKG": {
           "type": "text",
           "settings": {
-            "text": "<p>There's Manuka. And there's <em>Moko Manuka<\/em>.<\/p><p>Yes It's amazing. There's a reason skincare and medical companies around the world are rushing to include it in multiple formulation! But to really get the benefits of this incredible antibacterial and anti-inflammatory natural wonder, there are few things you need to look for.<\/p><p>Form our beehives in New Zealand to our meticulously formulated products - learn more about our medical grade Manuka protocol.<\/p>",
-            "text_style": "body"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body",
+            "badge_width": 50,
+            "badge_label": "",
+            "badge_width_2": 50,
+            "badge_label_2": "",
+            "badge_width_3": 50,
+            "badge_label_3": ""
           }
         },
-        "button_J7Ykfq": {
+        "button_Ck9N3K": {
           "type": "button",
           "settings": {
-            "button_label": "Learn more",
-            "button_link": "#",
-            "button_style_secondary": true
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "caption_kP8CQD",
-        "heading_cA6TMH",
-        "text_yQUQiy",
-        "button_J7Ykfq"
+        "heading_7zabrQ",
+        "text_VFcgKG",
+        "button_Ck9N3K"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/iStock-680439872_copy.png",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
         "section_color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 80
+        "padding_top": 80,
+        "padding_bottom": 36
       }
     },
     "image_with_text_TyMCFJ": {
@@ -394,7 +390,7 @@
     "image_banner",
     "collection_list_jLm6xQ",
     "featured_blog_hH6ek9",
-    "image_with_text_ELMKEb",
+    "image_with_text_three_column_KfqrgQ",
     "image_with_text_TyMCFJ",
     "reviews_YPVY7y",
     "image_with_text_MrUyEY",
