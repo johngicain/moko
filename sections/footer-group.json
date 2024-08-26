@@ -46,8 +46,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Dog-black-Resized.png",
-            "image_width": 210,
-            "alignment": "center"
+            "image_width": 170,
+            "alignment": ""
           }
         }
       },
@@ -59,12 +59,13 @@
         "image_F96mY3"
       ],
       "custom_css": [
-        ".footer-block-image {justify-content: flex-start; }",
-        " @media screen and (min-width: 1024px) {.footer-block-image {position: relative; height: 100%; } .footer-block-image .footer-block__image-wrapper {position: absolute; right: 0; bottom: -120px; } }"
+        ".footer-block-image {justify-content: flex-start;}",
+        "@media screen and (min-width: 1024px) {.footer-block-image {position: relative; height: 100%; } .footer-block-image .footer-block__image-wrapper {position: absolute; right: 0; bottom: -120px; }}"
       ],
       "settings": {
         "color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
-        "image_width": 100,
+        "image": "shopify:\/\/shop_images\/Moko_Logo.png",
+        "image_width": 150,
         "absolute_enable": true,
         "enable_follow_on_shop": true,
         "show_social": true,
