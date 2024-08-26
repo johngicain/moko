@@ -14,6 +14,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "email_sign_up_UbQJz3": {
+          "type": "email_sign_up",
+          "settings": {
+            "newsletter_heading": "Quick links",
+            "show_social": true
+          }
+        },
         "link_list_kA3eJr": {
           "type": "link_list",
           "settings": {
@@ -45,6 +52,7 @@
         }
       },
       "block_order": [
+        "email_sign_up_UbQJz3",
         "link_list_kA3eJr",
         "link_list_nWNMwA",
         "link_list_XH7me9",
@@ -52,8 +60,8 @@
       ],
       "settings": {
         "color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
-        "newsletter_enable": false,
-        "newsletter_heading": "Subscribe to our emails",
+        "image_width": 100,
+        "absolute_enable": true,
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
