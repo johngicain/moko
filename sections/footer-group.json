@@ -16,7 +16,6 @@
       "blocks": {
         "email_sign_up_UbQJz3": {
           "type": "email_sign_up",
-          "disabled": true,
           "settings": {
             "newsletter_heading": "Quick links",
             "show_social": true
@@ -58,6 +57,10 @@
         "link_list_nWNMwA",
         "link_list_XH7me9",
         "image_F96mY3"
+      ],
+      "custom_css": [
+        ".footer-block-image {justify-content: flex-start; }",
+        " @media screen and (min-width: 1024px) {.footer-block-image {position: relative; height: 100%; } .footer-block-image .footer-block__image-wrapper {position: absolute; right: 0; bottom: -120px; } }"
       ],
       "settings": {
         "color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
