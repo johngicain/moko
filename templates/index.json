@@ -202,6 +202,14 @@
     "image_with_text_MrUyEY": {
       "type": "image-with-text",
       "blocks": {
+        "caption_FPpTJR": {
+          "type": "caption",
+          "settings": {
+            "caption": "Moko Moments Journal",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
         "heading_mhUnhV": {
           "type": "heading",
           "settings": {
@@ -226,6 +234,7 @@
         }
       },
       "block_order": [
+        "caption_FPpTJR",
         "heading_mhUnhV",
         "text_kcLj6G",
         "button_QpGiWW"
