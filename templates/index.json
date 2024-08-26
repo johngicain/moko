@@ -108,36 +108,48 @@
     "image_with_text_three_column_KfqrgQ": {
       "type": "image-with-text-three-column",
       "blocks": {
+        "caption_adYReL": {
+          "type": "caption",
+          "settings": {
+            "caption": "<strong>Our hero ingredient<\/strong>",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
         "heading_7zabrQ": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "MAGICAL MANUKA HONEY",
             "heading_size": "h1"
           }
         },
         "text_VFcgKG": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>There's Manuka. And there's <em>Moko Manuka<\/em>.<\/p><p>Yes It's amazing. There's a reason skincare and medical companies around the world are rushing to include it in multiple formulation! But to really get the benefits of this incredible antibacterial and anti-inflammatory natural wonder, there are few things you need to look for.<\/p><p>Form our beehives in New Zealand to our meticulously formulated products - learn more about our medical grade Manuka protocol.<\/p>",
             "text_style": "body",
-            "badge_width": 50,
-            "badge_label": "",
-            "badge_width_2": 50,
-            "badge_label_2": "",
-            "badge_width_3": 50,
+            "badge": "shopify:\/\/shop_images\/Provides-Natural-Infection-Protection.svg",
+            "badge_width": 100,
+            "badge_label": "<strong>Certified<\/strong>",
+            "badge_2": "shopify:\/\/shop_images\/Lab-Tested.svg",
+            "badge_width_2": 100,
+            "badge_label_2": "<strong>Lab tested<\/strong>",
+            "badge_3": "shopify:\/\/shop_images\/Medical-Grade-Manuka-Honey.svg",
+            "badge_width_3": 100,
             "badge_label_3": ""
           }
         },
         "button_Ck9N3K": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_label": "Learn more",
+            "button_link": "#",
+            "button_style_secondary": true
           }
         }
       },
       "block_order": [
+        "caption_adYReL",
         "heading_7zabrQ",
         "text_VFcgKG",
         "button_Ck9N3K"
@@ -154,7 +166,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 80,
-        "padding_bottom": 36
+        "padding_bottom": 80
       }
     },
     "image_with_text_TyMCFJ": {
