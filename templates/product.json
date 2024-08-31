@@ -88,6 +88,20 @@
         "padding_bottom": 12
       }
     },
+    "video_Ag73ee": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "reviews_RmnwaC": {
       "type": "reviews",
       "blocks": {
@@ -226,6 +240,7 @@
   },
   "order": [
     "main",
+    "video_Ag73ee",
     "reviews_RmnwaC",
     "multicolumn_fArUrU",
     "related-products"
