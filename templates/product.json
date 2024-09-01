@@ -135,11 +135,11 @@
         "text_dLrdAz"
       ],
       "settings": {
-        "speed": "1",
+        "speed": "3",
         "title": "",
         "heading_size": "h1",
         "heading_font_weight": "normal",
-        "alignment": "left",
+        "alignment": "center",
         "description": "",
         "column_heading_color": "",
         "column_heading_size": "h1",
