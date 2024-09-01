@@ -580,6 +580,36 @@
   }
 }
 
+.marquee-wrapper {
+  overflow: hidden;
+}
+
+.marquee-wrapper .node-marquee__el {
+  /* width: 320px; */
+  margin: 0 1rem;
+  display: flex !important;
+}
+
+.marquee-wrapper .multicolumn-list__item {
+  margin: 0;
+}
+
+.marquee-wrapper .marquee-item {
+  width: 150px;
+  margin: 0 1rem;
+  display: flex;
+}
+
+.marquee-wrapper .marquee__image {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.marquee-wrapper .marquee__image {
+  padding: 0 1rem;
+}
+
 /* .row-slider-review {
   display: flex;
   gap: 20px;
