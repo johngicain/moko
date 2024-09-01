@@ -88,6 +88,66 @@
         "padding_bottom": 40
       }
     },
+    "marquee_columns_mWCFpX": {
+      "type": "marquee-columns",
+      "blocks": {
+        "text_xjPCmc": {
+          "type": "text",
+          "settings": {
+            "text_color": "#000000",
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Dermatologist-Tested.svg",
+            "text": "Dermatologist tested"
+          }
+        },
+        "text_GbcMRN": {
+          "type": "text",
+          "settings": {
+            "text_color": "#000000",
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Veterinarian-Approved.svg",
+            "text": "Veterinarian approved"
+          }
+        },
+        "text_a9GXKp": {
+          "type": "text",
+          "settings": {
+            "text_color": "#000000",
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Provides-Natural-Infection-Protection_1.svg",
+            "text": "Provides natural infection protection"
+          }
+        },
+        "text_dLrdAz": {
+          "type": "text",
+          "settings": {
+            "text_color": "#000000",
+            "background_color": "#ffffff",
+            "image": "shopify:\/\/shop_images\/Fast-Soothing-Relief.svg",
+            "text": "Fast healing relief"
+          }
+        }
+      },
+      "block_order": [
+        "text_xjPCmc",
+        "text_GbcMRN",
+        "text_a9GXKp",
+        "text_dLrdAz"
+      ],
+      "settings": {
+        "speed": "1",
+        "title": "",
+        "heading_size": "h1",
+        "heading_font_weight": "normal",
+        "alignment": "left",
+        "description": "",
+        "column_heading_color": "",
+        "column_heading_size": "h1",
+        "color_scheme": "scheme-e5190d38-e2d4-4b22-8065-57dc1c690a62",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "video_Ag73ee": {
       "type": "video",
       "settings": {
@@ -356,6 +416,7 @@
   },
   "order": [
     "main",
+    "marquee_columns_mWCFpX",
     "video_Ag73ee",
     "multicolumn_hNPPGA",
     "reviews_RmnwaC",
