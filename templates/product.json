@@ -91,7 +91,7 @@
     "video_Ag73ee": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "Product details",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -99,7 +99,65 @@
         "full_width": false,
         "color_scheme": "scheme-e659b653-628a-45ea-9f95-b44cab672d5e",
         "padding_top": 36,
-        "padding_bottom": 60
+        "padding_bottom": 80
+      }
+    },
+    "multicolumn_hNPPGA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GhHUBf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_1_4x_f6a89b6f-13b7-43ea-9247-9a6e1d3876ee.png",
+            "title": "<strong>First aid care<\/strong>",
+            "text": "<p>Veterinary-recommended to keep on hand for you dogs first needs to soothe and accelerate the healing process.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rCAKnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Targeted-Relief.svg",
+            "title": "<strong>Targeted relief<\/strong>",
+            "text": "<p>Soothe common skin issues, cuts scrapes, abrasions and other minor wounds.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tncmzX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Medical-Grade-Manuka-Honey.svg",
+            "title": "<strong>Medical grade Manuka honey<\/strong>",
+            "text": "<p>The naturally potent healing clinically proven for treating wounds, harvested by our own bees in New Zealand.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_GhHUBf",
+        "column_rCAKnC",
+        "column_tncmzX"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "text": "",
+        "text_style": "body",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-e5190d38-e2d4-4b22-8065-57dc1c690a62",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "reviews_RmnwaC": {
@@ -145,7 +203,7 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
-        "padding_top": 60,
+        "padding_top": 40,
         "padding_bottom": 40
       }
     },
@@ -294,72 +352,15 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "multicolumn_hNPPGA": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_GhHUBf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_1_4x_f6a89b6f-13b7-43ea-9247-9a6e1d3876ee.png",
-            "title": "<strong>First aid care<\/strong>",
-            "text": "<p>Veterinary-recommended to keep on hand for you dogs first needs to soothe and accelerate the healing process.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_rCAKnC": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Targeted relief<\/strong>",
-            "text": "<p>Soothe common skin issues, cuts scrapes, abrasions and other minor wounds.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_tncmzX": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Medical-Grade-Manuka-Honey.svg",
-            "title": "<strong>Medical grade Manuka honey<\/strong>",
-            "text": "<p>The naturally potent healing clinically proven for treating wounds, harvested by our own bees in New Zealand.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_GhHUBf",
-        "column_rCAKnC",
-        "column_tncmzX"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text_style": "body",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
     "video_Ag73ee",
+    "multicolumn_hNPPGA",
     "reviews_RmnwaC",
     "multicolumn_B9pGfG",
     "multicolumn_fArUrU",
-    "related-products",
-    "multicolumn_hNPPGA"
+    "related-products"
   ]
 }
