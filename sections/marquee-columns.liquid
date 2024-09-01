@@ -1,0 +1,249 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="marquee-wrapper color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding isolate scroll-trigger animate--slide-in">
+  {%- if section.settings.title != blank -%}
+    <div class="title-wrapper-with-link page-width title-wrapper--self-padded-mobile title-wrapper--no-top-margin heading-align--{{ section.settings.alignment }} scroll-trigger">
+      <h2 class="title inline-richtext {{ section.settings.heading_size }} content-align--{{ section.settings.alignment }} font-weight-{{ section.settings.heading_font_weight }}">
+        {{ section.settings.title }}
+      </h2>
+      {%- if section.settings.description != blank -%}
+        <div class="description rte content-align--{{ section.settings.alignment }}">
+          {{ section.settings.description }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
+          {{- section.settings.button_label | escape -}}
+        </a>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div
+    class="marquee-list contains-content-container grid"
+    id="node-marquee"
+  >
+    {% for block in section.blocks %}
+      {%- if block.settings.image != blank -%}
+        <div class="marquee-item color-{{ section.settings.color_scheme }} gradient scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ forloop.index }};">
+          {{
+            block.settings.image
+            | image_url: width: 200
+            | image_tag: class: 'marquee__image'
+          }}
+        </div>
+      {%- endif -%}
+      {%- if block.settings.text != blank -%}
+        <div class="rte">{{ block.settings.text }}</div>
+      {%- endif -%}
+    {% endfor %}
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/node-marquee@3.0.6/build/cdn/index.min.js"></script>
+<script>
+  nodeMarquee({
+    parent: '#node-marquee',
+    speed: {{ section.settings.speed }},
+    prependWhitespace: true
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "Marquee columns",
+    "class": "marquee-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "speed",
+        "label": "Speed",
+        "default": "1"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "default": "Multicolumn",
+        "label": "t:sections.multicolumn.settings.title.label"
+      },
+      {
+        "type": "select",
+        "id": "heading_size",
+        "options": [
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "t:sections.all.heading_size.label"
+      },
+      {
+        "type": "select",
+        "id": "heading_font_weight",
+        "options": [
+          {
+            "value": "thin",
+            "label": "Thin"
+          },
+          {
+            "value": "normal",
+            "label": "Normal"
+          },
+          {
+            "value": "bold",
+            "label": "Bold"
+          }
+        ],
+        "default": "normal",
+        "label": "Heading weight"
+      },
+      {
+        "type": "select",
+        "id": "alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left",
+        "label": "Text alignment"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "color",
+        "id": "column_heading_color",
+        "label": "Heading color"
+      },
+      {
+        "type": "select",
+        "id": "column_heading_size",
+        "options": [
+          {
+            "value": "h4",
+            "label": "Extra-extra small"
+          },
+          {
+            "value": "h3",
+            "label": "Extra-small"
+          },
+          {
+            "value": "h2",
+            "label": "t:sections.all.heading_size.options__1.label"
+          },
+          {
+            "value": "h1",
+            "label": "t:sections.all.heading_size.options__2.label"
+          },
+          {
+            "value": "h0",
+            "label": "t:sections.all.heading_size.options__3.label"
+          }
+        ],
+        "default": "h1",
+        "label": "Column heading size"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 36
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 36
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Marquee Item",
+        "settings": [
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color",
+            "default": "#000000"
+          },
+          {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#ffffff"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Marquee columns"
+      }
+    ]
+  }
+{% endschema %}
