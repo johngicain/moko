@@ -156,8 +156,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/iStock-2151640323_4f27ca65-4b4e-49b0-9be8-8ae3d91bab98.png",
-            "title": "",
-            "text": "",
+            "title": "Heals",
+            "text": "<p><strong>Medical grade Manuka honey<\/strong><\/p><p>From the native New Zealand Manuka flower with gentle but powerful antibacterial properties.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -166,8 +166,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/GettyImages-1386753267.jpg",
-            "title": "",
-            "text": "",
+            "title": "Soothes",
+            "text": "<p>Proprietary blend of deeply moisturizing and nourishing cocoa and parkii butters with fortifying beeswax.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -176,8 +176,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/iStock-2151640323_a08f9699-7678-4639-8756-f99aea20a198.png",
-            "title": "",
-            "text": "",
+            "title": "Protects",
+            "text": "<p><strong>Helianthus annus<\/strong><\/p><p>From the pressed seed meal of sunflower kernels with antioxidants and polyunsaturated fatty acids to replenish and protect.<\/p>",
             "link_label": "",
             "link": ""
           }
