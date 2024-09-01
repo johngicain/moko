@@ -155,8 +155,9 @@
         "column_R7DKTd": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/iStock-2151640323_4f27ca65-4b4e-49b0-9be8-8ae3d91bab98.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -164,8 +165,9 @@
         "column_6RtkYL": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/GettyImages-1386753267.jpg",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -173,8 +175,9 @@
         "column_z7Cfyc": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/iStock-2151640323_a08f9699-7678-4639-8756-f99aea20a198.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -191,7 +194,7 @@
         "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
         "text_style": "body",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
