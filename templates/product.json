@@ -97,7 +97,7 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -165,7 +165,7 @@
         "column_6RtkYL": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/GettyImages-1386753267.jpg",
+            "image": "shopify:\/\/shop_images\/GettyImages-1386753267.png",
             "title": "Soothes",
             "text": "<p>Proprietary blend of deeply moisturizing and nourishing cocoa and parkii butters with fortifying beeswax.<\/p>",
             "link_label": "",
