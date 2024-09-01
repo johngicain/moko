@@ -294,6 +294,63 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "multicolumn_hNPPGA": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_GhHUBf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_1_4x_f6a89b6f-13b7-43ea-9247-9a6e1d3876ee.png",
+            "title": "<strong>First aid care<\/strong>",
+            "text": "<p>Veterinary-recommended to keep on hand for you dogs first needs to soothe and accelerate the healing process.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rCAKnC": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Targeted relief<\/strong>",
+            "text": "<p>Soothe common skin issues, cuts scrapes, abrasions and other minor wounds.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tncmzX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Medical-Grade-Manuka-Honey.svg",
+            "title": "<strong>Medical grade Manuka honey<\/strong>",
+            "text": "<p>The naturally potent healing clinically proven for treating wounds, harvested by our own bees in New Zealand.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_GhHUBf",
+        "column_rCAKnC",
+        "column_tncmzX"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text_style": "body",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -302,6 +359,7 @@
     "reviews_RmnwaC",
     "multicolumn_B9pGfG",
     "multicolumn_fArUrU",
-    "related-products"
+    "related-products",
+    "multicolumn_hNPPGA"
   ]
 }
