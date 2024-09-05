@@ -588,6 +588,7 @@
   /* width: 320px; */
   margin: 0 1rem;
   display: flex !important;
+  align-items: center;
 }
 
 .marquee-wrapper .multicolumn-list__item {
@@ -595,8 +596,8 @@
 }
 
 .marquee-wrapper .marquee-item {
-  width: 150px;
-  margin: 0 1rem;
+  width: 60px;
+  margin: 0 1rem 0 5rem;
   display: flex;
 }
 
