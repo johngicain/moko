@@ -221,6 +221,7 @@
 }
 
 .collection-list__item .card--standard .card__inner .card__caption {
+  color: rgb(var(--color-background));
   font-family: "aeonikregular";
   font-size: 1.3rem;
   line-height: 2rem;
@@ -735,6 +736,10 @@
 
 .image-with-text__grid-3-cols .image-with-text__heading {
   font-family: "aeonikregular";
+}
+
+.image-with-text__grid-3-cols .image-with-text__heading p {
+  margin-top: 0;
 }
 
 .image-with-text__grid-3-cols .image-with-text__media--placeholder::after {
