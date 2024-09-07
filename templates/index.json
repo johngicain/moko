@@ -175,19 +175,19 @@
     "image_with_text_TyMCFJ": {
       "type": "image-with-text",
       "blocks": {
+        "heading_rHc6ae": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet our Moko vet",
+            "heading_size": "h1"
+          }
+        },
         "caption_hYQVFj": {
           "type": "caption",
           "settings": {
             "caption": "<strong>Dr Ernie Ward, DVM, CVFT<\/strong>",
             "text_style": "subtitle",
             "text_size": "medium"
-          }
-        },
-        "heading_rHc6ae": {
-          "type": "heading",
-          "settings": {
-            "heading": "Meet our Moko vet",
-            "heading_size": "h1"
           }
         },
         "text_e7JP6h": {
@@ -207,8 +207,8 @@
         }
       },
       "block_order": [
-        "caption_hYQVFj",
         "heading_rHc6ae",
+        "caption_hYQVFj",
         "text_e7JP6h",
         "button_aWzQw7"
       ],
