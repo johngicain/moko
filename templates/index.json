@@ -96,6 +96,8 @@
         "blog": "news",
         "post_limit": 4,
         "columns_desktop": 3,
+        "custom_image_float": "shopify:\/\/shop_images\/image-greens-float.png",
+        "custom_image_float_mobile": "shopify:\/\/shop_images\/image-greens-float-mobile.png",
         "color_scheme": "scheme-59a16aa5-730e-4bab-97db-de2d65493825",
         "show_image": true,
         "show_date": false,
@@ -338,7 +340,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "card_style_dark": false
           }
         },
         "column_xk8nF7": {
@@ -348,7 +351,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "card_style_dark": false
           }
         },
         "column_9mVAdj": {
@@ -358,7 +362,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "card_style_dark": false
           }
         },
         "column_McPN6r": {
@@ -368,7 +373,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "card_style_dark": false
           }
         }
       },
@@ -379,6 +385,7 @@
         "column_McPN6r"
       ],
       "settings": {
+        "card_style_overlay": false,
         "title": "Show us your fur baby!",
         "heading_size": "h1",
         "text": "<p>Tag us at @mokopet<\/p>",
