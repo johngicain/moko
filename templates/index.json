@@ -121,7 +121,7 @@
         "heading_7zabrQ": {
           "type": "heading",
           "settings": {
-            "heading": "MAGICAL MANUKA HONEY",
+            "heading": "<p>MAGICAL MANUKA HONEY<\/p>",
             "heading_size": "h1"
           }
         },
@@ -157,12 +157,13 @@
         "button_Ck9N3K"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/iStock-680439872_copy.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
+        "custom_image_float": "shopify:\/\/shop_images\/image-orange-float.png",
+        "custom_image_float_mobile": "shopify:\/\/shop_images\/image-orange-float.png",
         "section_color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "image_behavior": "none",
