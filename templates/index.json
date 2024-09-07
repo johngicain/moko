@@ -121,7 +121,7 @@
         "heading_7zabrQ": {
           "type": "heading",
           "settings": {
-            "heading": "<p>MAGICAL MANUKA HONEY<\/p>",
+            "heading": "<p>MAGICAL<br\/>MANUKA<br\/>HONEY<\/p>",
             "heading_size": "h1"
           }
         },
@@ -169,7 +169,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 20
       }
     },
     "image_with_text_TyMCFJ": {
