@@ -153,6 +153,12 @@
       "settings": {
         "heading": "Product details",
         "heading_size": "h1",
+        "sub_heading": "<p>Ingredients<br\/>FAQ<\/p>",
+        "sub_heading_size": "h1",
+        "sub_heading_color": "#e0c4ad",
+        "sub_heading_text_style": "caption-with-letter-spacing",
+        "text": "<p>Moko Mānuka Paw Balm is a skincare solution scientifically formulated with powerful medical grade Mānuka honey and a proprietary blend of organic butters and oils.  This rich balm delivers ultra hydration, soothed skin and cellular-level nourishment. It is designed to address the unique challenges of your dog’s paw pads and nose and offers immediate soothing relief and protection.<\/p>",
+        "desktop_content_alignment": "left",
         "enable_video_looping": false,
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
