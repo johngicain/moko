@@ -121,7 +121,7 @@
         "heading_7zabrQ": {
           "type": "heading",
           "settings": {
-            "heading": "MAGICAL MANUKA HONEY",
+            "heading": "<p>MAGICAL<br\/>MANUKA<br\/>HONEY<\/p>",
             "heading_size": "h1"
           }
         },
@@ -157,36 +157,37 @@
         "button_Ck9N3K"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/iStock-680439872_copy.png",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
+        "custom_image_float": "shopify:\/\/shop_images\/image-orange-float.png",
+        "custom_image_float_mobile": "shopify:\/\/shop_images\/image-orange-float.png",
         "section_color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 80,
-        "padding_bottom": 80
+        "padding_bottom": 20
       }
     },
     "image_with_text_TyMCFJ": {
       "type": "image-with-text",
       "blocks": {
+        "heading_rHc6ae": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet our Moko vet",
+            "heading_size": "h1"
+          }
+        },
         "caption_hYQVFj": {
           "type": "caption",
           "settings": {
             "caption": "<strong>Dr Ernie Ward, DVM, CVFT<\/strong>",
             "text_style": "subtitle",
             "text_size": "medium"
-          }
-        },
-        "heading_rHc6ae": {
-          "type": "heading",
-          "settings": {
-            "heading": "Meet our Moko vet",
-            "heading_size": "h1"
           }
         },
         "text_e7JP6h": {
@@ -206,8 +207,8 @@
         }
       },
       "block_order": [
-        "caption_hYQVFj",
         "heading_rHc6ae",
+        "caption_hYQVFj",
         "text_e7JP6h",
         "button_aWzQw7"
       ],
