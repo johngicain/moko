@@ -73,7 +73,7 @@
 
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% if section.settings.card_style_overlay == true %} card__style--overlay{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -123,7 +123,7 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info">
+              <div class="multicolumn-card__info {% if section.settings.card_style_overlay == true %}{% if block.settings.card_style_dark == true %}card__style--dark{% endif %}{% endif %}">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -203,6 +203,12 @@
   },
   "settings": [
     {
+      "type": "checkbox",
+      "id": "card_style_overlay",
+      "default": false,
+      "label": "Enable content overlay"
+    },
+    {
       "type": "inline_richtext",
       "id": "title",
       "default": "t:sections.multicolumn.settings.title.default",
@@ -239,7 +245,6 @@
     {
       "type": "richtext",
       "id": "text",
-      "default": "You may put some texts here.",
       "label": "t:sections.image-with-text.blocks.text.settings.text.label"
     },
     {
@@ -442,6 +447,12 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "card_style_dark",
+          "default": false,
+          "label": "Enable dark mode"
         }
       ]
     }
