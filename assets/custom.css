@@ -216,6 +216,7 @@
 }
 
 .collection-list__item .card--standard .card__inner .card__heading {
+  color: rgb(var(--color-background));
   font-size: 3rem;
 }
 
