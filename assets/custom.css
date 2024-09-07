@@ -220,6 +220,7 @@
 }
 
 .collection-list__item .card--standard .card__inner .card__caption {
+  font-family: "aeonikregular";
   font-size: 1.3rem;
   line-height: 2rem;
   width: 60%;
