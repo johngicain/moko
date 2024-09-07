@@ -26,6 +26,18 @@
 -%}
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding {% if section.settings.row_layout == true %}section__row-layout{% endif %}">
+    {%- unless section.settings.custom_image_float == blank -%}
+      <div class="image__float tablet-display desktop-display">
+        {{ section.settings.custom_image_float | image_url: width: 800 | image_tag }}
+      </div> 
+    {%- endunless -%}
+
+    {%- unless section.settings.custom_image_float_mobile == blank -%}
+      <div class="image__float mobile-display">
+        {{ section.settings.custom_image_float_mobile | image_url: width: 400 | image_tag }}
+      </div> 
+    {%- endunless -%}
+
     {%- unless section.settings.heading == blank -%}
       <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2
@@ -66,7 +78,7 @@
       <ul
         id="Slider-{{ section.id }}"
         class="blog__posts articles-wrapper contains-card contains-card--article{% if settings.blog_card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
-        role="list"
+        role="list" 
       >
         {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
           {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
@@ -277,6 +289,16 @@
       "step": 1,
       "default": 3,
       "label": "t:sections.featured-blog.settings.columns_desktop.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image_float",
+      "label": "Custom image float"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image_float_mobile",
+      "label": "Custom image float mobile"
     },
     {
       "type": "color_scheme",
