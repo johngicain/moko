@@ -246,7 +246,27 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
             "title": "Paw saver",
+            "text": "<p>Our rescue dutchie has a delicate paw problem. His pads have been very rough and are often cracked. We tried the Moko Mānuka Paw Balm! Within a few applications, his paws became soft and pliable as ever. The results were amazing, and we’re so happy to see him more comfortable.<\/p>",
+            "author": "<strong>Millie P<\/strong>",
+            "rating": "five"
+          }
+        },
+        "reviews_HTfUFx": {
+          "type": "reviews",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-29_at_8.19.20_PM.png",
+            "title": "Worth every penny!",
             "text": "<p>Teddy had cut on his leg that became infected and was bothering him. This cleared it up completely within a couple days! Way better than any rx cream! A little bit goes a long way!<\/p>",
+            "author": "<strong>Millie P<\/strong>",
+            "rating": "five"
+          }
+        },
+        "reviews_kt9Wnr": {
+          "type": "reviews",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-30_at_12.04.55_PM.png",
+            "title": "My Roux love it!",
+            "text": "<p>My pup’s paws used to get dry and cracked, especially after long walks on rough terrain. I started using Moko Mānuka Paw Balm, and the difference is incredible! His paws are now soft and smooth, and the balm absorbs quickly without leaving any greasy residue.<\/p>",
             "author": "<strong>Millie P<\/strong>",
             "rating": "five"
           }
@@ -254,7 +274,9 @@
       },
       "block_order": [
         "reviews_HRWc7e",
-        "reviews_NtQdGB"
+        "reviews_NtQdGB",
+        "reviews_HTfUFx",
+        "reviews_kt9Wnr"
       ],
       "settings": {
         "title": "",
