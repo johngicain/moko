@@ -221,7 +221,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-e5190d38-e2d4-4b22-8065-57dc1c690a62",
