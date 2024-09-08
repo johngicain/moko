@@ -536,7 +536,6 @@
     display: grid;
     grid-template-columns: 30% 65%;
     column-gap: 2rem;
-    align-items: center;
   }
 
   .multicolumn-list__item .row__layout .multicolumn-card__image-wrapper {
