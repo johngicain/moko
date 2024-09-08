@@ -236,7 +236,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.32.56_AM.png",
             "title": "This is paw-some!",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>SO, this cutie patootie has been using Moko Mānuka Paw Balm and I love how soft it is to touch and very spreadable like butter!! I brush his paws every day and Moko Mānuka Paw balm goes on right after. It’s amazing!<\/p>",
             "author": "<strong>Bess & Nacho<\/strong>",
             "rating": "five"
           }
@@ -246,7 +246,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
             "title": "Paw saver",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Teddy had cut on his leg that became infected and was bothering him. This cleared it up completely within a couple days! Way better than any rx cream! A little bit goes a long way!<\/p>",
             "author": "<strong>Millie P<\/strong>",
             "rating": "five"
           }
@@ -387,6 +387,7 @@
       ],
       "settings": {
         "card_style_overlay": false,
+        "row_layout": false,
         "title": "Show us your fur baby!",
         "heading_size": "h1",
         "text": "<p>Tag us at @mokopet<\/p>",
