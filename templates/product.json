@@ -289,7 +289,7 @@
             "text": "<p><strong>Medical grade Manuka honey<\/strong><\/p><p>From the native New Zealand Manuka flower with gentle but powerful antibacterial properties.<\/p>",
             "link_label": "",
             "link": "",
-            "card_style_dark": false
+            "card_style_dark": true
           }
         },
         "column_6RtkYL": {
@@ -321,7 +321,7 @@
         "column_z7Cfyc"
       ],
       "settings": {
-        "card_style_overlay": false,
+        "card_style_overlay": true,
         "row_layout": false,
         "title": "",
         "heading_size": "h1",
