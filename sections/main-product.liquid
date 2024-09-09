@@ -89,9 +89,16 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
+              {%- when 'review_description' -%}  
+                {% assign review_description = product.metafields.custom.latest_review_discription | metafield_tag %}
+                {% if review_description != blank %}
+                  <div class="product__review">
+                    {{ review_description }}
+                  </div>
+                {% endif %}
               {%- when 'text' -%}
                 <p
-                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if block.settings.enable_button_style == true %} text__button-style{% endif %}"
                   {{ block.shopify_attributes }}
                 >
                   {{- block.settings.text -}}
@@ -231,7 +238,8 @@
                     </div>
                   </details>
                 </div>
-              {%- when 'quantity_selector' -%}
+              {% comment %} {%- when 'quantity_selector' -%} {% endcomment %}
+              {%- when 'buy_buttons' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
                   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -369,6 +377,13 @@
                         {%- endif -%}
                       </price-per-item>
                     {%- endif -%}
+                    {%- render 'buy-buttons',
+                      block: block,
+                      product: product,
+                      product_form_id: product_form_id,
+                      section_id: section.id,
+                      show_pickup_availability: true
+                    -%}
                   </div>
                   <div class="quantity__rules caption" id="Quantity-Rules-{{ section.id }}">
                     {%- if product.selected_or_first_available_variant.quantity_rule.increment > 1 -%}
@@ -463,14 +478,14 @@
 
               {%- when 'variant_picker' -%}
                 {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
-              {%- when 'buy_buttons' -%}
+              {% comment %} {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
                   product: product,
                   product_form_id: product_form_id,
                   section_id: section.id,
                   show_pickup_availability: true
-                -%}
+                -%} {% endcomment %}
               {%- when 'rating' -%}
                 {%- if product.metafields.reviews.rating.value != blank -%}
                   <div class="rating-wrapper">
@@ -758,12 +773,24 @@
           ],
           "default": "body",
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_button_style",
+          "label": "Enable button style text",
+          "default": false
         }
       ]
     },
     {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+
+    {
+      "type": "review_description",
+      "name": "Review description",
       "limit": 1
     },
     {
@@ -841,11 +868,11 @@
         }
       ]
     },
-    {
-      "type": "quantity_selector",
-      "name": "t:sections.main-product.blocks.quantity_selector.name",
-      "limit": 1
-    },
+    // {
+    //   "type": "quantity_selector",
+    //   "name": "t:sections.main-product.blocks.quantity_selector.name",
+    //   "limit": 1
+    // },
     {
       "type": "variant_picker",
       "name": "t:sections.main-product.blocks.variant_picker.name",
