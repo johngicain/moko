@@ -16,7 +16,7 @@
           "type": "text",
           "settings": {
             "text": "Best Seller",
-            "text_style": "uppercase",
+            "text_style": "subtitle",
             "enable_button_style": true
           }
         },
