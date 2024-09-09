@@ -48,19 +48,18 @@
           "settings": {
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "yotpo_subscriptions_app_block_kpEEhB": {
           "type": "shopify:\/\/apps\/yotpo-subscriptions\/blocks\/app-block\/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
           "settings": {
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
-          "disabled": true,
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
@@ -81,8 +80,8 @@
         "variant_picker",
         "description",
         "price",
-        "quantity_selector",
         "yotpo_subscriptions_app_block_kpEEhB",
+        "quantity_selector",
         "buy_buttons",
         "share"
       ],
