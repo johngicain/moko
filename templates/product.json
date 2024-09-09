@@ -14,10 +14,10 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text": "Best Seller",
+            "text_style": "uppercase",
+            "enable_button_style": true
           }
         },
         "title": {
@@ -53,11 +53,6 @@
           "settings": {
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -81,7 +76,6 @@
         "description",
         "price",
         "yotpo_subscriptions_app_block_kpEEhB",
-        "quantity_selector",
         "buy_buttons",
         "share"
       ],
