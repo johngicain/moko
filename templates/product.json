@@ -31,6 +31,11 @@
             "product": "{{product}}"
           }
         },
+        "review_description_KBNmtW": {
+          "type": "review_description",
+          "settings": {
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -45,6 +50,7 @@
         },
         "price": {
           "type": "price",
+          "disabled": true,
           "settings": {
           }
         },
@@ -72,6 +78,7 @@
         "vendor",
         "title",
         "okendo_star_rating_Xzweh4",
+        "review_description_KBNmtW",
         "variant_picker",
         "description",
         "price",
