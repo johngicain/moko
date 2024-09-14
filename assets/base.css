@@ -2382,9 +2382,6 @@ input[type="checkbox"] {
   margin-left: 0;
 }
 
-.header .header__heading {
-}
-
 @media screen and (min-width: 750px) {
   .header {
     grid-template-areas: "left-icons heading icons";
@@ -2601,6 +2598,12 @@ input[type="checkbox"] {
   height: 3rem;
   width: 4rem;
   padding: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .header__icon--cart .icon {
+    padding: 0 1rem 0 0;
+  }
 }
 
 .header__icon--cart {
