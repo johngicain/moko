@@ -11,8 +11,8 @@
   }
 
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.3 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.3 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -217,7 +217,7 @@
                       {%- if block.settings.image != blank -%}
                         {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
                         <div
-                          class="footer-block__image-wrapper"
+                          class="footer-block__image-wrapper {% if block.settings.enable_image_float == true %}image__float{% endif %}"
                           style="max-width: min(100%, {{ block.settings.image_width }}px);"
                         >
                           <img
@@ -393,9 +393,10 @@
 
       <div class="footer__copyright caption">
         <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}.
         </small>
-        <small class="copyright__content">{{ powered_by_link }}</small>
+        <small class="copyright__content">All rights reserved</small>
+        {% comment %} <small class="copyright__content">{{ powered_by_link }}</small> {% endcomment %}
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
             {%- for policy in shop.policies -%}
@@ -413,6 +414,30 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const acc = document.querySelectorAll(".footer-block--menu .footer-block__heading");
+  const panel = document.querySelectorAll('.footer-block--menu .footer-block__details-content');
+
+  for (let i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        let setClasses = !this.classList.contains('active');
+          setClass(acc, 'active', 'remove');
+          setClass(panel, 'show', 'remove');
+
+          if (setClasses) {
+              this.classList.toggle("active");
+              this.nextElementSibling.classList.toggle("show");
+          }
+      }
+  }
+
+  function setClass(els, className, fnName) {
+      for (let i = 0; i < els.length; i++) {
+          els[i].classList[fnName](className);
+      }
+  }
+</script>
 
 {% schema %}
 {
@@ -517,6 +542,12 @@
             }
           ],
           "default": "center"
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_image_float",
+          "default": false,
+          "label": "Enable custom float image (mobile)"
         }
       ]
     },
