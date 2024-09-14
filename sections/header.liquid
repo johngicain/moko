@@ -13,8 +13,14 @@
 
 <style>
   header-drawer {
-    justify-self: start;
-    margin-left: -1.2rem;
+    justify-self: center;
+  }
+
+  @media screen and (min-width: 750px) {
+    header-drawer {
+      justify-self: start;
+      margin-left: -1.2rem;
+    }
   }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
@@ -73,7 +79,7 @@
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0 | round: 0 }}px 1rem {{ section.settings.padding_bottom | times: 0 | round: 0 }}px 1rem;
   }
 
   .section-header {
@@ -85,9 +91,7 @@
     .section-header {
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
-  }
 
-  @media screen and (min-width: 990px) {
     .header {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -151,20 +155,53 @@
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
-              <div class="header__heading-logo-wrapper">
+              <div class="header__heading-logo-wrapper 21">
                 {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
                 {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
                 {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
                 {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo motion-reduce',
-                  widths: widths,
-                  height: logo_height,
-                  width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
+                {% if section.settings.nav_transparent %}
+                  {% if template.name == "index" %}
+                    {{ settings.logo_transparent | image_url: width: 600 | image_tag:
+                      class: 'header__heading-logo motion-reduce logo-transparent',
+                      widths: widths,
+                      height: logo_height,
+                      width: settings.logo_width,
+                      alt: logo_alt,
+                      sizes: sizes,
+                      preload: true
+                    }}
+                      {{ settings.logo | image_url: width: 600 | image_tag:
+                      class: 'header__heading-logo motion-reduce logo-sticky',
+                      widths: widths,
+                      height: logo_height,
+                      width: settings.logo_width,
+                      alt: logo_alt,
+                      sizes: sizes,
+                      preload: true
+                    }}
+                  {% else %}
+                    {{ settings.logo | image_url: width: 600 | image_tag:
+                      class: 'header__heading-logo motion-reduce',
+                      widths: widths,
+                      height: logo_height,
+                      width: settings.logo_width,
+                      alt: logo_alt,
+                      sizes: sizes,
+                      preload: true
+                    }}
+                  {% endif %}
+                {% else %}
+                  {{ settings.logo | image_url: width: 600 | image_tag:
+                    class: 'header__heading-logo motion-reduce',
+                    widths: widths,
+                    height: logo_height,
+                    width: settings.logo_width,
+                    alt: logo_alt,
+                    sizes: sizes,
+                    preload: true
+                  }}
+                {% endif %}
               </div>
             {%- else -%}
               <span class="h2">{{ shop.name }}</span>
@@ -191,7 +228,7 @@
       {%- endif -%}
           <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
             {%- if settings.logo != blank -%}
-              <div class="header__heading-logo-wrapper">
+              <div class="header__heading-logo-wrapper 22">
                 {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
                 {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
                 {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
@@ -239,7 +276,34 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+
+      {% comment %} {% render 'header-search', input_id: 'Search-In-Modal' %} {% endcomment %}
+
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {%- liquid
+          if cart == empty
+            render 'icon-cart-empty'
+          else
+            render 'icon-cart'
+          endif
+        -%}
+        {% comment %} <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span> {% endcomment %}
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </div>
+        {%- endif -%}
+      </a>
+
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+        {%- endcase -%}
+      {%- endfor -%}
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
@@ -265,32 +329,6 @@
           </span>
         </a>
       {%- endif -%}
-
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when '@app' -%}
-            {% render block %}
-        {%- endcase -%}
-      {%- endfor -%}
-
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
-          endif
-        -%}
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
-        {%- if cart != empty -%}
-          <div class="cart-count-bubble">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%}
-      </a>
     </div>
   </header>
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
@@ -298,6 +336,70 @@
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
+
+{% style %}
+  .header {
+    min-height: fit-content;
+  }
+
+  @media screen and (min-width: 750px) {
+    .header {
+      min-height: 120px;
+    }
+  }
+
+  .menu-open .header--transparent {
+    position: relative;
+  }
+
+  .logo-transparent,
+  .menu-open .logo-transparent {
+    display: none;
+  }
+
+  .menu-open svg.icon,
+  .menu-open .cart-count-bubble {
+    color: rgba(var(--color-foreground)) !important;
+  }
+
+  .menu-open .logo-sticky {
+    display: block !important;
+  }
+
+  @media screen and (min-width: 750px) {
+    .header--transparent {
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: transparent;
+    }
+
+    .shopify-section-header-sticky .header--transparent {
+      background: var(--gradient-background);
+    }
+
+    .shopify-section-header-sticky .header--transparent svg.icon,
+    .shopify-section-header-sticky .cart-count-bubble {
+      color: rgba(var(--color-foreground)) !important;
+    }
+
+    .section-header .logo-sticky,
+    .shopify-section-header-sticky .logo-transparent {
+      display: none;
+    }
+
+    .logo-transparent,
+    .shopify-section-header-sticky .logo-sticky {
+      display: block;
+    }
+
+    .header--transparent svg.icon,
+    .header--transparent .cart-count-bubble {
+      color: rgb(var(--color-background));
+    }
+  }
+
+{% endstyle %}
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
@@ -418,6 +520,7 @@
     "name": {{ shop.name | json }},
     {% if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+      "logo_transparent": {{ settings.logo_transparent | image_url: width: 500 | prepend: "https:" | json }},
     {% endif %}
     "sameAs": [
       {{ settings.social_twitter_link | json }},

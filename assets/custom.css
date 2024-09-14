@@ -82,15 +82,10 @@
   overflow: hidden;
 }
 
-.header--transparent {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: transparent;
-}
-
-.shopify-section-header-sticky .header--transparent {
-  background: var(--gradient-background);
+.menu-drawer__navigation-container .search-modal__content {
+  height: auto;
+  border-bottom: solid 1px rgba(var(--color-foreground), 0.1);
+  padding: 3rem;
 }
 
 .product .text__button-style {
