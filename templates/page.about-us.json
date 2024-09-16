@@ -33,13 +33,55 @@
         "show_text_below": true
       }
     },
+    "image_with_text_three_column_mpFXUU": {
+      "type": "image-with-text-three-column",
+      "blocks": {
+        "heading_TcYhDE": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Bonded by nature.<br\/>Powered by love.<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_HnUjEM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p><strong>Sarah Scarlet<\/strong><br\/>Founder<\/p>",
+            "text_style": "body",
+            "badge_width": 50,
+            "badge_label": "asd",
+            "badge_width_2": 50,
+            "badge_label_2": "",
+            "badge_width_3": 50,
+            "badge_label_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_TcYhDE",
+        "text_HnUjEM"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "section_color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
+        "color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
     "image_with_text_QALe6j": {
       "type": "image-with-text",
       "blocks": {
         "heading_7TLEUV": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Modern wellness for dogs rooted in the enduring wisdom of nature.",
             "heading_size": "h1"
           }
         },
@@ -67,7 +109,7 @@
         "color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 80,
+        "padding_top": 40,
         "padding_bottom": 40
       }
     },
@@ -226,6 +268,7 @@
   "order": [
     "main",
     "image_banner_UFxcUb",
+    "image_with_text_three_column_mpFXUU",
     "image_with_text_QALe6j",
     "image_with_text_8JrfbC",
     "image_with_text_xrUkmg",
