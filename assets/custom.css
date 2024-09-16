@@ -1214,3 +1214,43 @@
     width: 35rem;
   }
 }
+
+/* .yotpo-widget-subscriptions-add-to-cart .yotpo-selling-plans {
+	display: flex !important;
+}
+
+.yotpo-widget-subscriptions-add-to-cart .yotpo-radio-container.yotpo-selected {
+	border: solid 2px #C09A83 !important;
+}
+
+.yotpo-widget-subscriptions-add-to-cart .yotpo-radio-container {
+	width: 100%;
+    border: solid 2px #FFF3E6 !important;
+    border-radius: 0 !important;
+    padding: 10px !important;
+    text-align: left;
+    justify-content: flex-start !important;
+}
+
+.yotpo-widget-subscriptions-add-to-cart .yotpo-subscription-discount-label-container {
+	margin: 0 !important;
+    flex-direction: column;
+}
+
+.yotpo-widget-subscriptions-add-to-cart .yotpo-subscription-discount-label-container div {
+  font-weight: bold;
+}
+
+.yotpo-widget-subscriptions-add-to-cart .yotpo-tile-buttons {
+	margin: 0 !important;
+}
+
+@media screen and (min-width: 750px) {
+	.yotpo-widget-subscriptions-add-to-cart .yotpo-radio-container {
+		padding: 10px 20px!important
+	}
+  
+  	.yotpo-widget-subscriptions-add-to-cart .yotpo-subscription-discount-label-container {
+  		flex-direction: row;
+  	}
+} */
