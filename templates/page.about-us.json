@@ -20,6 +20,7 @@
     "image_banner_UFxcUb": {
       "type": "image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/Portland-branding-photographer-home-dog-86-min_9783571b-6755-486b-8c88-52de76881dd5.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
