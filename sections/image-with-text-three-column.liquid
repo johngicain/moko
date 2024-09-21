@@ -95,7 +95,7 @@
                     {%- if block.settings.badge != blank -%}
                       {%- assign badge_size_2x = block.settings.badge_width | times: 2 | at_most: 5760 -%}
                       <div
-                        class="image-with-text__badge-wrapper"
+                        class="image-with-text__badge-wrapper content__alignment-{{ block.settings.badge_content_alignment }}"
                         style="max-width: min(100%, {{ block.settings.badge_width }}px);"
                       >
                         <img
@@ -107,16 +107,16 @@
                           height="{{ block.settings.badge.height }}"
                         >
                         {%- if block.settings.badge_label != blank -%}
-                          <p class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                          <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                             {{ block.settings.badge_label }}
-                          </p>
+                          </div>
                         {%- endif -%}
                       </div>
                     {%- endif -%}
                     {%- if block.settings.badge_2 != blank -%}
                       {%- assign badge_size_2x = block.settings.badge_width_2 | times: 2 | at_most: 5760 -%}
                       <div
-                        class="image-with-text__badge-wrapper"
+                        class="image-with-text__badge-wrapper content__alignment-{{ block.settings.badge_content_alignment }}"
                         style="max-width: min(100%, {{ block.settings.badge_width_2 }}px);"
                       >
                         <img
@@ -128,16 +128,16 @@
                           height="{{ block.settings.badge_2.height }}"
                         >
                         {%- if block.settings.badge_label_2 != blank -%}
-                          <p class="image-with-text__text rte {{ block.settings.text_style_2 }}" {{ block.shopify_attributes }}>
+                          <div class="image-with-text__text rte {{ block.settings.text_style_2 }}" {{ block.shopify_attributes }}>
                             {{ block.settings.badge_label_2 }}
-                          </p>
+                          </div>
                         {%- endif -%}
                       </div>
                     {%- endif -%}
                     {%- if block.settings.badge_3 != blank -%}
                       {%- assign badge_size_2x = block.settings.badge_width_3 | times: 2 | at_most: 5760 -%}
                       <div
-                        class="image-with-text__badge-wrapper"
+                        class="image-with-text__badge-wrapper content__alignment-{{ block.settings.badge_content_alignment }}"
                         style="max-width: min(100%, {{ block.settings.badge_width_3 }}px);"
                       >
                         <img
@@ -149,9 +149,9 @@
                           height="{{ block.settings.badge_3.height }}"
                         >
                         {%- if block.settings.badge_label_3 != blank -%}
-                          <p class="image-with-text__text rte {{ block.settings.text_style_3 }}" {{ block.shopify_attributes }}>
+                          <div class="image-with-text__text rte {{ block.settings.text_style_3 }}" {{ block.shopify_attributes }}>
                             {{ block.settings.badge_label_3 }}
-                          </p>
+                          </div>
                         {%- endif -%}
                       </div>
                     {%- endif -%}
@@ -580,14 +580,14 @@
           "type": "range",
           "id": "badge_width",
           "min": 10,
-          "max": 100,
+          "max": 200,
           "step": 5,
           "unit": "px",
           "label": "Badge width",
           "default": 50
         },
         {
-          "type": "inline_richtext",
+          "type": "richtext",
           "id": "badge_label",
           "label": "Label"
         },
@@ -630,6 +630,26 @@
           "type": "inline_richtext",
           "id": "badge_label_3",
           "label": "Label 3"
+        },
+        {
+          "type": "select",
+          "id": "badge_content_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.image-with-text.settings.desktop_content_alignment.options__3.label"
+            }
+          ],
+          "default": "left",
+          "label": "Badge content alignment"
         }
       ]
     }
