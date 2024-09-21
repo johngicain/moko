@@ -547,6 +547,9 @@
         "column_ENJwbC",
         "column_3NPjTr"
       ],
+      "custom_css": [
+        ".multicolumn-card__info h3.inline-richtext {font-family: \"aeonikregular\";}"
+      ],
       "settings": {
         "card_style_overlay": false,
         "row_layout": false,
