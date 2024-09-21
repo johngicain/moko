@@ -72,6 +72,9 @@
         "button_dnbgUX",
         "text_EghjmF"
       ],
+      "custom_css": [
+        ".image-with-text__heading {font-family: \"eplicabookbook\";}"
+      ],
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
