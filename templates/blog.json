@@ -25,6 +25,58 @@
         "show_text_below": true
       }
     },
+    "image_with_text_three_column_wD8WX8": {
+      "type": "image-with-text-three-column",
+      "blocks": {
+        "heading_bH33wb": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>A passion for pets<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "button_dnbgUX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "text_EghjmF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you had told Jade Dominique back when he was in college that he would have a two-decades-long career in the pet industry, he would have told you that you were crazy.<\/p><p><strong>Jade Dominique<\/strong><br\/>General Manage<\/p>",
+            "text_style": "body",
+            "badge_width": 50,
+            "badge_label": "",
+            "badge_width_2": 50,
+            "badge_label_2": "",
+            "badge_width_3": 50,
+            "badge_label_3": "",
+            "badge_content_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bH33wb",
+        "button_dnbgUX",
+        "text_EghjmF"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "section_color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
+        "color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -40,6 +92,7 @@
   },
   "order": [
     "image_banner_mdTJXB",
+    "image_with_text_three_column_wD8WX8",
     "main"
   ]
 }
