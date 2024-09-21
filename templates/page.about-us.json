@@ -62,6 +62,9 @@
         "heading_TcYhDE",
         "text_HnUjEM"
       ],
+      "custom_css": [
+        ".image-with-text__heading {font-family: \"eplicabookbook\";}"
+      ],
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
