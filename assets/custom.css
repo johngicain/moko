@@ -323,6 +323,10 @@ body {
   text-align: center;
 }
 
+.multicolumn-card__info .rte {
+  line-height: 2rem;
+}
+
 .multicolumn-card__info {
   display: flex;
   flex-direction: column;
