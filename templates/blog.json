@@ -28,6 +28,14 @@
     "image_with_text_three_column_wD8WX8": {
       "type": "image-with-text-three-column",
       "blocks": {
+        "caption_6TMBE7": {
+          "type": "caption",
+          "settings": {
+            "caption": "<strong>Stories<\/strong>",
+            "text_style": "subtitle",
+            "text_size": "medium"
+          }
+        },
         "heading_bH33wb": {
           "type": "heading",
           "settings": {
@@ -59,6 +67,7 @@
         }
       },
       "block_order": [
+        "caption_6TMBE7",
         "heading_bH33wb",
         "button_dnbgUX",
         "text_EghjmF"
