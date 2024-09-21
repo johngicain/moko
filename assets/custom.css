@@ -540,12 +540,12 @@ body {
   justify-content: center;
 }
 
-@media screen and (max-width: 749px) {
+/* @media screen and (max-width: 749px) {
   .multicolumn .grid {
     column-gap: 1rem !important;
     row-gap: 1rem !important;
   }
-}
+} */
 
 .multicolumn-list .card__style--overlay .multicolumn-card__info {
   position: absolute;

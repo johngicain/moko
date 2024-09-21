@@ -124,7 +124,7 @@
   }
 
   .multicolumn-list:not(.slider) {
-    gap: 0;
+    /* gap: 0; */
     /* padding-left: 1.5rem;
     padding-right: 1.5rem; */
   }
