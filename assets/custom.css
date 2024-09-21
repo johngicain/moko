@@ -1323,7 +1323,7 @@ body {
 .yotpo-radio-button-text-wrapper
   .yotpo-subscription-discount-label-container
   div {
-  font-family: "aeonikregular";
+  font-family: "aeonikregular" !important;
 }
 
 /* .yotpo-widget-subscriptions-add-to-cart .yotpo-selling-plans {
