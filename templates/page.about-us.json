@@ -189,7 +189,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
-        "justify_content": "start",
+        "justify_content": "center",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -241,7 +241,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
-        "justify_content": "start",
+        "justify_content": "center",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -293,7 +293,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
-        "justify_content": "start",
+        "justify_content": "center",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -345,7 +345,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
-        "justify_content": "start",
+        "justify_content": "center",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -397,7 +397,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
-        "justify_content": "start",
+        "justify_content": "center",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -448,7 +448,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
-        "justify_content": "start",
+        "justify_content": "center",
         "title": "",
         "heading_size": "h1",
         "text": "",
