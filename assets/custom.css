@@ -324,7 +324,12 @@ body {
 }
 
 .multicolumn-card__info .rte {
+  font-size: 1.3rem;
   line-height: 2rem;
+}
+
+.multicolumn-card__info .rte p {
+  margin-bottom: 1rem;
 }
 
 .multicolumn-card__info {
