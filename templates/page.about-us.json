@@ -54,7 +54,8 @@
             "badge_width_2": 50,
             "badge_label_2": "",
             "badge_width_3": 50,
-            "badge_label_3": ""
+            "badge_label_3": "",
+            "badge_content_alignment": "left"
           }
         }
       },
@@ -162,7 +163,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/ing-1.png",
-            "title": "Column",
+            "title": "Columnasd",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": "",
@@ -188,6 +189,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -239,6 +241,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -290,6 +293,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -341,6 +345,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -392,6 +397,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -442,6 +448,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -543,6 +550,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": false,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -618,6 +626,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": false,
+        "justify_content": "start",
         "title": "Show us your fur baby!",
         "heading_size": "h1",
         "text": "<p>Tag us at @mokopet<\/p>",
