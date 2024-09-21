@@ -107,9 +107,9 @@
                           height="{{ block.settings.badge.height }}"
                         >
                         {%- if block.settings.badge_label != blank -%}
-                          <p class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                          <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
                             {{ block.settings.badge_label }}
-                          </p>
+                          </div>
                         {%- endif -%}
                       </div>
                     {%- endif -%}
