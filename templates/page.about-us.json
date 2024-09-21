@@ -48,8 +48,9 @@
           "settings": {
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p><strong>Sarah Scarlet<\/strong><br\/>Founder<\/p>",
             "text_style": "body",
-            "badge_width": 50,
-            "badge_label": "asd",
+            "badge": "shopify:\/\/shop_images\/Sarah-Scarlet-Signature.svg",
+            "badge_width": 100,
+            "badge_label": "<strong>Sarah Scarlet<\/strong>                              Founder",
             "badge_width_2": 50,
             "badge_label_2": "",
             "badge_width_3": 50,
