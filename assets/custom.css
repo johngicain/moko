@@ -1319,8 +1319,10 @@ body {
 /* YOTPO APP */
 
 .yotpo-radio-button-text-wrapper .yotpo-radio-button-text-wrapper,
-.yotpo-radio-button-text-wrapper .yotpo-tile-buttons,
-.yotpo-radio-button-text-wrapper div {
+.yotpo-radio-button-text-wrapper .yotpo-tile-buttons .yotpo-radio-label-text,
+.yotpo-radio-button-text-wrapper
+  .yotpo-subscription-discount-label-container
+  div {
   font-family: "aeonikregular";
 }
 
