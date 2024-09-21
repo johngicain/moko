@@ -78,6 +78,10 @@
   font-style: normal;
 }
 
+body {
+  font-family: "aeonikregular";
+}
+
 .content-for-layout {
   overflow: hidden;
 }
@@ -1238,6 +1242,10 @@
   padding: 1.5rem;
 }
 
+.oke-w-reviewMinimal .oke-reviewContent-body p {
+  line-height: 2rem;
+}
+
 .oke-w-controls-nav .oke-poweredBy {
   display: none !important;
 }
@@ -1280,10 +1288,6 @@
 
   .oke-w-reviewMinimal {
     padding: 2rem;
-  }
-
-  .oke-w-reviewMinimal .oke-reviewContent-body p {
-    line-height: 1.5rem;
   }
 
   .oke-w-reviews-main,
