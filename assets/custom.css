@@ -1224,6 +1224,10 @@
 
 /* OKE REVIEWS APP */
 
+.okeReviews {
+  max-width: max-content !important;
+}
+
 .oke-w-reviews-writeReview,
 .oke-w-reviews-writeReview .oke-w-writeReview {
   width: 100%;
@@ -1304,7 +1308,7 @@
 
 @media screen and (min-width: 990px) {
   .oke-w-reviews {
-    column-gap: 2rem;
+    column-gap: 4rem;
   }
 }
 

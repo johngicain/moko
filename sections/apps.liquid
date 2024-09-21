@@ -12,27 +12,29 @@
   }
 {%- endstyle -%}
 
-<div class="section-{{ section.id }} color-{{ section.settings.color_scheme }} {% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-  {%- unless section.settings.title == blank -%}
-    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
-      <h2 class="title inline-richtext {{ section.settings.heading_size }}">
-        {{ section.settings.title }}
-      </h2>
-      {%- if section.settings.text != blank -%}
-        <div class="image-with-text__text rte {{ section.settings.text_style }}">
-          {{ section.settings.text }}
-        </div>
-      {%- endif -%}  
-      {%- if section.settings.button_label != blank and show_mobile_slider -%}
-        <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
-          {{- section.settings.button_label | escape -}}
-        </a>
-      {%- endif -%}
-    </div>
-  {%- endunless -%}
-  {%- for block in section.blocks -%}
-    {% render block %}
-  {%- endfor -%}
+<div class="section-{{ section.id }} color-{{ section.settings.color_scheme }}">
+  <div class="{% if section.settings.include_margins %}page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    {%- unless section.settings.title == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.title }}
+        </h2>
+        {%- if section.settings.text != blank -%}
+          <div class="image-with-text__text rte {{ section.settings.text_style }}">
+            {{ section.settings.text }}
+          </div>
+        {%- endif -%}  
+        {%- if section.settings.button_label != blank and show_mobile_slider -%}
+          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
+            {{- section.settings.button_label | escape -}}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endunless -%}
+    {%- for block in section.blocks -%}
+      {% render block %}
+    {%- endfor -%}
+  </div>
 </div>
 
 {% schema %}
