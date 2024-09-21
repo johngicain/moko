@@ -132,13 +132,14 @@
             "text_style": "body",
             "badge": "shopify:\/\/shop_images\/Provides-Natural-Infection-Protection.svg",
             "badge_width": 100,
-            "badge_label": "<strong>Certified<\/strong>",
+            "badge_label": "<p><strong>Certified<\/strong><\/p>",
             "badge_2": "shopify:\/\/shop_images\/Lab-Tested.svg",
             "badge_width_2": 100,
             "badge_label_2": "<strong>Lab tested<\/strong>",
             "badge_3": "shopify:\/\/shop_images\/Medical-Grade-Manuka-Honey.svg",
             "badge_width_3": 100,
-            "badge_label_3": ""
+            "badge_label_3": "",
+            "badge_content_alignment": "center"
           }
         },
         "button_Ck9N3K": {
