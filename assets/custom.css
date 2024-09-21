@@ -323,6 +323,23 @@ body {
   text-align: center;
 }
 
+.multicolumn-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify__content--start {
+  justify-content: flex-start;
+}
+
+.justify__content--center {
+  justify-content: center;
+}
+
+.justify__content--end {
+  justify-content: end;
+}
+
 .collection-list__item .card--standard > .card__content {
   display: none;
 }

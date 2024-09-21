@@ -80,7 +80,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container {% if section.settings.row_layout == true %}row__layout{% endif %}">
+            <div class="multicolumn-card content-container {% if section.settings.row_layout == true %}row__layout align__items--{{ section.settings.align_items }}{% endif %}">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -125,7 +125,7 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info {% if section.settings.card_style_overlay == true %}{% if block.settings.card_style_dark == true %}card__style--dark{% endif %}{% endif %}">
+              <div class="multicolumn-card__info {% if section.settings.card_style_overlay == true %}{% if block.settings.card_style_dark == true %}card__style--dark{% endif %}{% endif %} {% if section.settings.row_layout == true %}justify__content--{{ section.settings.justify_content }}{% endif %}">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -215,6 +215,26 @@
       "id": "row_layout",
       "default": false,
       "label": "Switch to row layout"
+    },
+    {
+      "type": "select",
+      "id": "justify_content",
+      "options": [
+        {
+          "value": "start",
+          "label": "Start"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "End"
+        }
+      ],
+      "default": "start",
+      "label": "Justify content"
     },
     {
       "type": "inline_richtext",
