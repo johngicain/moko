@@ -36,16 +36,18 @@
             {% assign tag_last = tag | split: " " | last | downcase %}
             <li class="tag {% if current_url contains tag_first and current_url contains tag_last %}active{% endif %}">
               {{ tag | link_to_tag: tag }}
+              {% comment %} | customer_logout_link, class: "link" {% endcomment %}
             </li>
           {%- endfor -%}
         </ul>
       </div> 
       <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-        {%- for article in blog.articles -%}
+        {% assign display_limit = section.settings.display_limit %}
+        {%- for article in blog.articles limit: display_limit -%}
           <div
             class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
-              data-cascade 
+              data-cascade
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
@@ -56,6 +58,9 @@
               show_image: section.settings.show_image,
               show_date: section.settings.show_date,
               show_author: section.settings.show_author,
+              show_custom_author: section.settings.show_custom_author,
+              button_label: section.settings.button_label,
+              button_style_secondary: section.settings.button_style_secondary,
               show_excerpt: true
             -%}
           </div>
@@ -143,6 +148,34 @@
       "id": "show_author",
       "default": false,
       "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_custom_author",
+      "default": false,
+      "label": "Show custom author"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "t:sections.image-with-text.blocks.button.settings.button_label.default",
+      "label": "t:sections.image-with-text.blocks.button.settings.button_label.label",
+      "info": "t:sections.image-with-text.blocks.button.settings.button_label.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "default": false,
+      "label": "t:sections.image-with-text.blocks.button.settings.outline_button.label"
+    },
+    {
+      "type": "range",
+      "id": "display_limit",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "label": "Num of articles display",
+      "default": 4
     },
     {
       "type": "color_scheme",
