@@ -73,7 +73,8 @@
         "text_EghjmF"
       ],
       "custom_css": [
-        ".image-with-text__heading {font-family: \"eplicabookbook\";}"
+        ".image-with-text__heading {font-family: \"eplicabookbook\";}",
+        ".image-with-text__grid-3-cols .heading-item .button {position: relative;}"
       ],
       "settings": {
         "height": "adapt",
