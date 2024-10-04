@@ -9,10 +9,10 @@
 */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Moko_Logo.png",
-    "logo_transparent": "shopify:\/\/shop_images\/moko-logo-white.svg",
+    "logo": "shopify://shop_images/Moko_Logo.png",
+    "logo_transparent": "shopify://shop_images/moko-logo-white.svg",
     "logo_width": 120,
-    "favicon": "shopify:\/\/shop_images\/Moko_Logo.png",
+    "favicon": "shopify://shop_images/Moko_Logo.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -109,11 +109,11 @@
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/facebook.com\/shopify",
-    "social_instagram_link": "https:\/\/www.instagram.com\/shopify\/",
-    "social_youtube_link": "https:\/\/youtube.com\/shopify",
+    "social_facebook_link": "https://facebook.com/shopify",
+    "social_instagram_link": "https://www.instagram.com/shopify/",
+    "social_youtube_link": "https://youtube.com/shopify",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
@@ -124,7 +124,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -148,14 +148,14 @@
     ],
     "blocks": {
       "733389323033596483": {
-        "type": "shopify:\/\/apps\/okendo\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "type": "shopify://apps/okendo/blocks/theme-settings/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
         "disabled": false,
         "settings": {
           "show_preview_data": true
         }
       },
       "8257630261509358238": {
-        "type": "shopify:\/\/apps\/yotpo-subscriptions\/blocks\/app-embed-block\/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
+        "type": "shopify://apps/yotpo-subscriptions/blocks/app-embed-block/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
         "disabled": false,
         "settings": {
         }
@@ -441,7 +441,7 @@
       "sale_badge_color_scheme": "scheme-4",
       "sold_out_badge_color_scheme": "scheme-3",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
