@@ -12,7 +12,7 @@
     "image_banner_mdTJXB": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Portland-personal-branding-photographer-nashville-132_1.png",
+        "image": "shopify://shop_images/Portland-personal-branding-photographer-nashville-132_1.png",
         "image_overlay_opacity": 0,
         "image_height": "adaptfirstfold",
         "desktop_content_position": "middle-center",
@@ -31,7 +31,7 @@
         "caption_6TMBE7": {
           "type": "caption",
           "settings": {
-            "caption": "<strong>Stories<\/strong>",
+            "caption": "<strong>Stories</strong>",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -39,7 +39,7 @@
         "heading_bH33wb": {
           "type": "heading",
           "settings": {
-            "heading": "<p>A passion for pets<\/p>",
+            "heading": "<p>A passion for pets</p>",
             "heading_size": "h1"
           }
         },
@@ -54,7 +54,7 @@
         "text_EghjmF": {
           "type": "text",
           "settings": {
-            "text": "<p>If you had told Jade Dominique back when he was in college that he would have a two-decades-long career in the pet industry, he would have told you that you were crazy.<\/p><p><strong>Jade Dominique<\/strong><br\/>General Manage<\/p>",
+            "text": "<p>If you had told Jade Dominique back when he was in college that he would have a two-decades-long career in the pet industry, he would have told you that you were crazy.</p><p><strong>Jade Dominique</strong><br/>General Manage</p>",
             "text_style": "body",
             "badge_width": 50,
             "badge_label": "",
@@ -100,7 +100,7 @@
         "show_date": false,
         "show_author": false,
         "show_custom_author": true,
-        "button_label": "Button label",
+        "button_label": "Read more",
         "button_style_secondary": true,
         "display_limit": 4,
         "section_color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
@@ -114,7 +114,7 @@
         "column_PEPKdU": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/atanas-teodosiev-GvhSUEN-Lm8-unsplash_B_W_839249ea-50bb-443f-b940-0fddc41b9b33.jpg",
+            "image": "shopify://shop_images/atanas-teodosiev-GvhSUEN-Lm8-unsplash_B_W_839249ea-50bb-443f-b940-0fddc41b9b33.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -125,7 +125,7 @@
         "column_xcEpxD": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-158800495-170667a_2_b2a65ea1-fdd4-4ea4-b936-51c821b9c8c4.jpg",
+            "image": "shopify://shop_images/gettyimages-158800495-170667a_2_b2a65ea1-fdd4-4ea4-b936-51c821b9c8c4.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -136,7 +136,7 @@
         "column_WdgMxH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-200133470-001-170667a_5031e203-fd1c-4491-9d62-229e1092e3b1.jpg",
+            "image": "shopify://shop_images/gettyimages-200133470-001-170667a_5031e203-fd1c-4491-9d62-229e1092e3b1.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -147,7 +147,7 @@
         "column_zTLYDY": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-878245220-170667a.jpg",
+            "image": "shopify://shop_images/gettyimages-878245220-170667a.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -168,7 +168,7 @@
         "justify_content": "start",
         "title": "Show us your fur baby!",
         "heading_size": "h1",
-        "text": "<p>Tag us at @mokopet<\/p>",
+        "text": "<p>Tag us at @mokopet</p>",
         "text_style": "body",
         "image_width": "full",
         "image_ratio": "square",
