@@ -16,7 +16,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -29,7 +29,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2024-03-20_at_12.25.22_PM.png",
+        "image": "shopify://shop_images/Screen_Shot_2024-03-20_at_12.25.22_PM.png",
         "image_overlay_opacity": 10,
         "image_height": "adaptfirstfold",
         "desktop_content_position": "bottom-left",
@@ -92,12 +92,12 @@
         "heading": "Nurture you dog with the healing force of nature",
         "heading_size": "h1",
         "button_label": "Who we are",
-        "button_link": "\/pages\/about",
+        "button_link": "/pages/about",
         "blog": "news",
         "post_limit": 4,
         "columns_desktop": 3,
-        "custom_image_float": "shopify:\/\/shop_images\/image-greens-float.png",
-        "custom_image_float_mobile": "shopify:\/\/shop_images\/image-greens-float-mobile.png",
+        "custom_image_float": "shopify://shop_images/image-greens-float.png",
+        "custom_image_float_mobile": "shopify://shop_images/image-greens-float-mobile.png",
         "color_scheme": "scheme-59a16aa5-730e-4bab-97db-de2d65493825",
         "show_image": true,
         "show_date": false,
@@ -113,7 +113,7 @@
         "caption_adYReL": {
           "type": "caption",
           "settings": {
-            "caption": "<strong>Our hero ingredient<\/strong>",
+            "caption": "<strong>Our hero ingredient</strong>",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -121,22 +121,22 @@
         "heading_7zabrQ": {
           "type": "heading",
           "settings": {
-            "heading": "<p>MAGICAL<br\/>MANUKA<br\/>HONEY<\/p>",
+            "heading": "<p>MAGICAL<br/>MANUKA<br/>HONEY</p>",
             "heading_size": "h1"
           }
         },
         "text_VFcgKG": {
           "type": "text",
           "settings": {
-            "text": "<p>There's Manuka. And there's <em>Moko Manuka<\/em>.<\/p><p>Yes It's amazing. There's a reason skincare and medical companies around the world are rushing to include it in multiple formulation! But to really get the benefits of this incredible antibacterial and anti-inflammatory natural wonder, there are few things you need to look for.<\/p><p>Form our beehives in New Zealand to our meticulously formulated products - learn more about our medical grade Manuka protocol.<\/p>",
+            "text": "<p>There's Manuka. And there's <em>Moko Manuka</em>.</p><p>Yes It's amazing. There's a reason skincare and medical companies around the world are rushing to include it in multiple formulation! But to really get the benefits of this incredible antibacterial and anti-inflammatory natural wonder, there are few things you need to look for.</p><p>Form our beehives in New Zealand to our meticulously formulated products - learn more about our medical grade Manuka protocol.</p>",
             "text_style": "body",
-            "badge": "shopify:\/\/shop_images\/Provides-Natural-Infection-Protection.svg",
+            "badge": "shopify://shop_images/Provides-Natural-Infection-Protection.svg",
             "badge_width": 100,
-            "badge_label": "<p><strong>Certified<\/strong><\/p>",
-            "badge_2": "shopify:\/\/shop_images\/Lab-Tested.svg",
+            "badge_label": "<p><strong>Certified</strong></p>",
+            "badge_2": "shopify://shop_images/Lab-Tested.svg",
             "badge_width_2": 100,
-            "badge_label_2": "<strong>Lab tested<\/strong>",
-            "badge_3": "shopify:\/\/shop_images\/Medical-Grade-Manuka-Honey.svg",
+            "badge_label_2": "<strong>Lab tested</strong>",
+            "badge_3": "shopify://shop_images/Medical-Grade-Manuka-Honey.svg",
             "badge_width_3": 100,
             "badge_label_3": "",
             "badge_content_alignment": "center"
@@ -163,8 +163,8 @@
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
-        "custom_image_float": "shopify:\/\/shop_images\/image-orange-float.png",
-        "custom_image_float_mobile": "shopify:\/\/shop_images\/image-orange-float.png",
+        "custom_image_float": "shopify://shop_images/image-orange-float.png",
+        "custom_image_float_mobile": "shopify://shop_images/image-orange-float.png",
         "section_color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
         "image_behavior": "none",
@@ -186,7 +186,7 @@
         "caption_hYQVFj": {
           "type": "caption",
           "settings": {
-            "caption": "<strong>Dr Ernie Ward, DVM, CVFT<\/strong>",
+            "caption": "<strong>Dr Ernie Ward, DVM, CVFT</strong>",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -194,7 +194,7 @@
         "text_e7JP6h": {
           "type": "text",
           "settings": {
-            "text": "<p>\"Today's passionate pet parents care deeply about their dog's health, and want the same clean clinicals and natural options they use on their own skin.\"<\/p>",
+            "text": "<p>\"Today's passionate pet parents care deeply about their dog's health, and want the same clean clinicals and natural options they use on their own skin.\"</p>",
             "text_style": "body"
           }
         },
@@ -213,8 +213,11 @@
         "text_e7JP6h",
         "button_aWzQw7"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 1024px) {.image-with-text__text-item a.button {position: absolute; bottom: 0; margin: 0; }}"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-06-07_at_12.38.39_PM.png",
+        "image": "shopify://shop_images/Screenshot_2024-06-07_at_12.38.39_PM.png",
         "height": "small",
         "desktop_image_width": "large",
         "layout": "text_first",
@@ -235,40 +238,40 @@
         "reviews_HRWc7e": {
           "type": "reviews",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.32.56_AM.png",
+            "image": "shopify://shop_images/Screen_Shot_2024-05-24_at_11.32.56_AM.png",
             "title": "This is paw-some!",
-            "text": "<p>SO, this cutie patootie has been using Moko Mānuka Paw Balm and I love how soft it is to touch and very spreadable like butter!! I brush his paws every day and Moko Mānuka Paw balm goes on right after. It’s amazing!<\/p>",
-            "author": "<strong>Bess & Nacho<\/strong>",
+            "text": "<p>SO, this cutie patootie has been using Moko Mānuka Paw Balm and I love how soft it is to touch and very spreadable like butter!! I brush his paws every day and Moko Mānuka Paw balm goes on right after. It’s amazing!</p>",
+            "author": "<strong>Bess & Nacho</strong>",
             "rating": "five"
           }
         },
         "reviews_NtQdGB": {
           "type": "reviews",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
+            "image": "shopify://shop_images/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
             "title": "Paw saver",
-            "text": "<p>Our rescue dutchie has a delicate paw problem. His pads have been very rough and are often cracked. We tried the Moko Mānuka Paw Balm! Within a few applications, his paws became soft and pliable as ever. The results were amazing, and we’re so happy to see him more comfortable.<\/p>",
-            "author": "<strong>Millie P<\/strong>",
+            "text": "<p>Our rescue dutchie has a delicate paw problem. His pads have been very rough and are often cracked. We tried the Moko Mānuka Paw Balm! Within a few applications, his paws became soft and pliable as ever. The results were amazing, and we’re so happy to see him more comfortable.</p>",
+            "author": "<strong>Millie P</strong>",
             "rating": "five"
           }
         },
         "reviews_HTfUFx": {
           "type": "reviews",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-29_at_8.19.20_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2024-04-29_at_8.19.20_PM.png",
             "title": "Worth every penny!",
-            "text": "<p>Teddy had cut on his leg that became infected and was bothering him. This cleared it up completely within a couple days! Way better than any rx cream! A little bit goes a long way!<\/p>",
-            "author": "<strong>Jade & Teddy<\/strong>",
+            "text": "<p>Teddy had cut on his leg that became infected and was bothering him. This cleared it up completely within a couple days! Way better than any rx cream! A little bit goes a long way!</p>",
+            "author": "<strong>Jade & Teddy</strong>",
             "rating": "five"
           }
         },
         "reviews_kt9Wnr": {
           "type": "reviews",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-30_at_12.04.55_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2024-04-30_at_12.04.55_PM.png",
             "title": "My Roux love it!",
-            "text": "<p>My pup’s paws used to get dry and cracked, especially after long walks on rough terrain. I started using Moko Mānuka Paw Balm, and the difference is incredible! His paws are now soft and smooth, and the balm absorbs quickly without leaving any greasy residue.<\/p>",
-            "author": "<strong>Sammy & Roux<\/strong>",
+            "text": "<p>My pup’s paws used to get dry and cracked, especially after long walks on rough terrain. I started using Moko Mānuka Paw Balm, and the difference is incredible! His paws are now soft and smooth, and the balm absorbs quickly without leaving any greasy residue.</p>",
+            "author": "<strong>Sammy & Roux</strong>",
             "rating": "five"
           }
         }
@@ -304,7 +307,7 @@
         "caption_FPpTJR": {
           "type": "caption",
           "settings": {
-            "caption": "<strong>Moko Moments Journal<\/strong>",
+            "caption": "<strong>Moko Moments Journal</strong>",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -319,7 +322,7 @@
         "text_kcLj6G": {
           "type": "text",
           "settings": {
-            "text": "<p>Hot dogs get hot paws, luckily, there are some things you can do to protect your dog's paws from the heat this summer...<\/p>",
+            "text": "<p>Hot dogs get hot paws, luckily, there are some things you can do to protect your dog's paws from the heat this summer...</p>",
             "text_style": "body"
           }
         },
@@ -338,8 +341,11 @@
         "text_kcLj6G",
         "button_QpGiWW"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 1024px) {.image-with-text__text-item a.button {position: absolute; bottom: 0; margin: 0; }}"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/lighter.jpg",
+        "image": "shopify://shop_images/lighter.jpg",
         "height": "small",
         "desktop_image_width": "large",
         "layout": "text_first",
@@ -360,7 +366,7 @@
         "column_TdUHLY": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/atanas-teodosiev-GvhSUEN-Lm8-unsplash_B_W_839249ea-50bb-443f-b940-0fddc41b9b33.jpg",
+            "image": "shopify://shop_images/atanas-teodosiev-GvhSUEN-Lm8-unsplash_B_W_839249ea-50bb-443f-b940-0fddc41b9b33.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -371,7 +377,7 @@
         "column_xk8nF7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-158800495-170667a_2_b2a65ea1-fdd4-4ea4-b936-51c821b9c8c4.jpg",
+            "image": "shopify://shop_images/gettyimages-158800495-170667a_2_b2a65ea1-fdd4-4ea4-b936-51c821b9c8c4.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -382,7 +388,7 @@
         "column_9mVAdj": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-200133470-001-170667a_5031e203-fd1c-4491-9d62-229e1092e3b1.jpg",
+            "image": "shopify://shop_images/gettyimages-200133470-001-170667a_5031e203-fd1c-4491-9d62-229e1092e3b1.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -393,7 +399,7 @@
         "column_McPN6r": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-878245220-170667a.jpg",
+            "image": "shopify://shop_images/gettyimages-878245220-170667a.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -411,9 +417,10 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": false,
+        "justify_content": "start",
         "title": "Show us your fur baby!",
         "heading_size": "h1",
-        "text": "<p>Tag us at @mokopet<\/p>",
+        "text": "<p>Tag us at @mokopet</p>",
         "text_style": "body",
         "image_width": "full",
         "image_ratio": "square",
