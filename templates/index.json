@@ -228,6 +228,8 @@
         "color_scheme": "scheme-e5190d38-e2d4-4b22-8065-57dc1c690a62",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_description_bottom": false,
+        "mobile_row_reverse": true,
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -356,6 +358,8 @@
         "color_scheme": "scheme-9a0371d7-d171-446d-b575-74cfb1313ed1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "mobile_description_bottom": true,
+        "mobile_row_reverse": true,
         "padding_top": 40,
         "padding_bottom": 100
       }
