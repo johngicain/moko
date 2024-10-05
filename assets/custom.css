@@ -1037,13 +1037,8 @@ body {
   .mobile-description-bottom
     .image-with-text__media-item
     .image-with-text__text.rte {
+    margin: 2rem 0 1rem;
     display: block;
-  }
-
-  .mobile-description-bottom
-    .image-with-text__media-item
-    .image-with-text__media {
-    margin-bottom: 2rem;
   }
 
   .mobile-row-reverse {
