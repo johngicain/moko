@@ -16,9 +16,10 @@
   }
 {%- endstyle -%}
 
-{%- paginate blog.articles by 6 -%}
+{% assign display_limit = section.settings.display_limit %}
+{%- paginate blog.articles by display_limit -%}
   <div class="gradient color-{{ section.settings.section_color_scheme }}">
-    <div class="main-blog  page-width section-{{ section.id }}-padding ">
+    <div class="main-blog page-width section-{{ section.id }}-padding ">
       <div class="blog-tags-wrapper">
         <h1 class="title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
           {% if section.settings.heading != blank %}
@@ -42,7 +43,6 @@
         </ul>
       </div> 
       <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-        {% assign display_limit = section.settings.display_limit %}
         {%- for article in blog.articles limit: display_limit -%}
           <div
             class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"

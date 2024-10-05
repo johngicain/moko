@@ -419,7 +419,7 @@
 }
 
 .image-with-text__content .image-with-text__text + .button {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   margin-top: 3rem;
 }
