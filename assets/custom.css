@@ -1034,6 +1034,10 @@ body {
     display: none;
   }
 
+  .mobile-description-bottom .image-with-text__text-item .button {
+    margin: 1rem 0;
+  }
+
   .mobile-description-bottom
     .image-with-text__media-item
     .image-with-text__text.rte {
