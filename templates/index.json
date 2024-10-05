@@ -214,7 +214,6 @@
         "button_aWzQw7"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.image-with-text__grid {flex-direction: column-reverse !important; }}",
         "@media screen and (min-width: 1024px) {.image-with-text__text-item a.button {position: absolute; bottom: 0; margin: 0; }}"
       ],
       "settings": {
@@ -343,7 +342,6 @@
         "button_QpGiWW"
       ],
       "custom_css": [
-        "@media screen and (max-width: 749px) {.image-with-text__grid {flex-direction: column-reverse !important; }}",
         "@media screen and (min-width: 1024px) {.image-with-text__text-item a.button {position: absolute; bottom: 0; margin: 0; }}"
       ],
       "settings": {
