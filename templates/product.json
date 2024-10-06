@@ -165,33 +165,42 @@
     "media_with_content_RXhpKD": {
       "type": "media-with-content",
       "blocks": {
-        "heading_iGVBhB": {
-          "type": "heading",
+        "video_content_yYyAeq": {
+          "type": "video_content",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "Product details",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "<p>Moko Mānuka Paw Balm is a skincare solution scientifically formulated with powerful medical grade Mānuka honey and a proprietary blend of organic butters and oils.  This rich balm delivers ultra hydration, soothed skin and cellular-level nourishment. It is designed to address the unique challenges of your dog’s paw pads and nose and offers immediate soothing relief and protection.</p>"
           }
         },
-        "text_wCcTEy": {
-          "type": "text",
+        "text_content_dHCGXQ": {
+          "type": "text_content",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
+            "heading": "Ingredients",
+            "description": "<p><strong>What's in it?</strong></p><p>This unique honey not only tastes incredible on its own but also pairs well with other wellness ingredients, and can be easily added to hot or cold beverages for daily wellness. Our Manuka honey contains no articular antibiotics, no added sugar, and is GMO-free and Glyphosate-free.</p><p><strong>What's not?</strong></p><p>First Honey 600+ MGO is a superfood rich in color, taste, and texture. A natural source of Antioxidants, Probiotics, Vitamins & Minerals and scientifically proven to contain natural anti-inflammatory propeeties.</p>"
           }
         },
-        "button_mpKwM9": {
-          "type": "button",
+        "collapsible_content_HChkWV": {
+          "type": "collapsible_content",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "heading": "FAQ",
+            "row_heading_1": "<strong>Is Moko Mānuka  Ointment suitable for all dog breeds and ages?</strong>",
+            "row_content_1": "<p>Yes! Moko Mānuka Ointment is safe and effective for dogs of all breeds, ages, and skin types, including sensitive skin. It's also suitable for puppies, making it a versatile solution for your dog's skin care needs.</p>",
+            "row_heading_2": "<strong>Why is it significant that Moko Mānuka Wound Ointment contains no antibiotics?</strong>",
+            "row_content_2": "<p>Yes! Moko Mānuka Ointment is safe and effective for dogs of all breeds, ages, and skin types, including sensitive skin. It's also suitable for puppies, making it a versatile solution for your dog's skin care needs.</p>",
+            "row_heading_3": "<strong>Should I leave the affected area covered or uncovered after applying Moko Manuka Wound Ointment?</strong>",
+            "row_content_3": "<p>Yes! Moko Mānuka Ointment is safe and effective for dogs of all breeds, ages, and skin types, including sensitive skin. It's also suitable for puppies, making it a versatile solution for your dog's skin care needs.</p>",
+            "row_heading_4": "<strong>Can you use Moko Mānuka Wound Ointment after The expiration date, if so, how long after?</strong>",
+            "row_content_4": "<p>Yes! Moko Mānuka Ointment is safe and effective for dogs of all breeds, ages, and skin types, including sensitive skin. It's also suitable for puppies, making it a versatile solution for your dog's skin care needs.</p>",
+            "row_heading_5": "",
+            "row_content_5": ""
           }
         }
       },
       "block_order": [
-        "heading_iGVBhB",
-        "text_wCcTEy",
-        "button_mpKwM9"
+        "video_content_yYyAeq",
+        "text_content_dHCGXQ",
+        "collapsible_content_HChkWV"
       ],
       "settings": {
         "heading_size": "h1",
@@ -210,26 +219,6 @@
         "mobile_row_reverse": false,
         "padding_top": 80,
         "padding_bottom": 36
-      }
-    },
-    "video_Ag73ee": {
-      "type": "video",
-      "settings": {
-        "heading": "Product details",
-        "heading_size": "h1",
-        "sub_heading": "<p>Ingredients<br/>FAQ</p>",
-        "sub_heading_size": "h1",
-        "sub_heading_color": "#e0c4ad",
-        "sub_heading_text_style": "caption-with-letter-spacing",
-        "text": "<p>Moko Mānuka Paw Balm is a skincare solution scientifically formulated with powerful medical grade Mānuka honey and a proprietary blend of organic butters and oils.  This rich balm delivers ultra hydration, soothed skin and cellular-level nourishment. It is designed to address the unique challenges of your dog’s paw pads and nose and offers immediate soothing relief and protection.</p>",
-        "desktop_content_alignment": "left",
-        "enable_video_looping": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-e659b653-628a-45ea-9f95-b44cab672d5e",
-        "padding_top": 80,
-        "padding_bottom": 80
       }
     },
     "multicolumn_hNPPGA": {
@@ -530,7 +519,6 @@
     "main",
     "marquee_columns_mWCFpX",
     "media_with_content_RXhpKD",
-    "video_Ag73ee",
     "multicolumn_hNPPGA",
     "reviews_RmnwaC",
     "multicolumn_B9pGfG",
