@@ -203,6 +203,9 @@
         "collapsible_content_HChkWV"
       ],
       "settings": {
+        "section_heading": "",
+        "section_heading_size": "h0",
+        "desktop_heading_alignment": "center",
         "heading_size": "h1",
         "image": "shopify://shop_images/MokoManukaPawBalmRENDER4.png",
         "height": "adapt",
