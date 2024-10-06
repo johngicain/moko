@@ -203,7 +203,7 @@
         "collapsible_content_HChkWV"
       ],
       "custom_css": [
-        ".multicolumn-list {row-gap: 0;}"
+
       ],
       "settings": {
         "section_heading": "",
@@ -379,6 +379,9 @@
         "column_R7DKTd",
         "column_6RtkYL",
         "column_z7Cfyc"
+      ],
+      "custom_css": [
+        ".multicolumn-list {row-gap: 0;}"
       ],
       "settings": {
         "card_style_overlay": true,
