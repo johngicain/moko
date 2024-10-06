@@ -469,6 +469,13 @@ body {
   }
 }
 
+.media-with-content__content-wrapper .header {
+  padding: 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .media-with-content__content > .accordion summary {
   padding: 0.5rem 0;
 }
