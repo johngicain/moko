@@ -26,7 +26,7 @@
           }
         },
         "okendo_star_rating_Xzweh4": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify://apps/okendo/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}"
           }
@@ -55,7 +55,7 @@
           }
         },
         "yotpo_subscriptions_app_block_kpEEhB": {
-          "type": "shopify:\/\/apps\/yotpo-subscriptions\/blocks\/app-block\/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
+          "type": "shopify://apps/yotpo-subscriptions/blocks/app-block/ef25e582-ada5-4bb0-b4e7-f94e97ab1bb4",
           "settings": {
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "text_color": "#000000",
             "background_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/Dermatologist-Tested.svg",
+            "image": "shopify://shop_images/Dermatologist-Tested.svg",
             "text": "Dermatologist tested"
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "text_color": "#000000",
             "background_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/Veterinarian-Approved.svg",
+            "image": "shopify://shop_images/Veterinarian-Approved.svg",
             "text": "Veterinarian approved"
           }
         },
@@ -128,7 +128,7 @@
           "settings": {
             "text_color": "#000000",
             "background_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/Provides-Natural-Infection-Protection_1.svg",
+            "image": "shopify://shop_images/Provides-Natural-Infection-Protection_1.svg",
             "text": "Provides natural infection protection"
           }
         },
@@ -137,7 +137,7 @@
           "settings": {
             "text_color": "#000000",
             "background_color": "#ffffff",
-            "image": "shopify:\/\/shop_images\/Fast-Soothing-Relief.svg",
+            "image": "shopify://shop_images/Fast-Soothing-Relief.svg",
             "text": "Fast healing relief"
           }
         }
@@ -162,19 +162,69 @@
         "padding_bottom": 20
       }
     },
+    "media_with_content_RXhpKD": {
+      "type": "media-with-content",
+      "blocks": {
+        "heading_iGVBhB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_wCcTEy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_mpKwM9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iGVBhB",
+        "text_wCcTEy",
+        "button_mpKwM9"
+      ],
+      "settings": {
+        "heading_size": "h1",
+        "image": "shopify://shop_images/MokoManukaPawBalmRENDER4.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-e659b653-628a-45ea-9f95-b44cab672d5e",
+        "color_scheme": "scheme-e659b653-628a-45ea-9f95-b44cab672d5e",
+        "open_first_collapsible_row": true,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "mobile_row_reverse": false,
+        "padding_top": 80,
+        "padding_bottom": 36
+      }
+    },
     "video_Ag73ee": {
       "type": "video",
       "settings": {
         "heading": "Product details",
         "heading_size": "h1",
-        "sub_heading": "<p>Ingredients<br\/>FAQ<\/p>",
+        "sub_heading": "<p>Ingredients<br/>FAQ</p>",
         "sub_heading_size": "h1",
         "sub_heading_color": "#e0c4ad",
         "sub_heading_text_style": "caption-with-letter-spacing",
-        "text": "<p>Moko Mānuka Paw Balm is a skincare solution scientifically formulated with powerful medical grade Mānuka honey and a proprietary blend of organic butters and oils.  This rich balm delivers ultra hydration, soothed skin and cellular-level nourishment. It is designed to address the unique challenges of your dog’s paw pads and nose and offers immediate soothing relief and protection.<\/p>",
+        "text": "<p>Moko Mānuka Paw Balm is a skincare solution scientifically formulated with powerful medical grade Mānuka honey and a proprietary blend of organic butters and oils.  This rich balm delivers ultra hydration, soothed skin and cellular-level nourishment. It is designed to address the unique challenges of your dog’s paw pads and nose and offers immediate soothing relief and protection.</p>",
         "desktop_content_alignment": "left",
         "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-e659b653-628a-45ea-9f95-b44cab672d5e",
@@ -188,9 +238,9 @@
         "column_GhHUBf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Artboard_1_4x_f6a89b6f-13b7-43ea-9247-9a6e1d3876ee.png",
-            "title": "<strong>First aid care<\/strong>",
-            "text": "<p>Veterinary-recommended to keep on hand for you dogs first needs to soothe and accelerate the healing process.<\/p>",
+            "image": "shopify://shop_images/Artboard_1_4x_f6a89b6f-13b7-43ea-9247-9a6e1d3876ee.png",
+            "title": "<strong>First aid care</strong>",
+            "text": "<p>Veterinary-recommended to keep on hand for you dogs first needs to soothe and accelerate the healing process.</p>",
             "link_label": "",
             "link": "",
             "card_style_dark": false
@@ -199,9 +249,9 @@
         "column_rCAKnC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Targeted-Relief.svg",
-            "title": "<strong>Targeted relief<\/strong>",
-            "text": "<p>Soothe common skin issues, cuts scrapes, abrasions and other minor wounds.<\/p>",
+            "image": "shopify://shop_images/Targeted-Relief.svg",
+            "title": "<strong>Targeted relief</strong>",
+            "text": "<p>Soothe common skin issues, cuts scrapes, abrasions and other minor wounds.</p>",
             "link_label": "",
             "link": "",
             "card_style_dark": false
@@ -210,9 +260,9 @@
         "column_tncmzX": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Medical-Grade-Manuka-Honey.svg",
-            "title": "<strong>Medical grade Manuka honey<\/strong>",
-            "text": "<p>The naturally potent healing clinically proven for treating wounds, harvested by our own bees in New Zealand.<\/p>",
+            "image": "shopify://shop_images/Medical-Grade-Manuka-Honey.svg",
+            "title": "<strong>Medical grade Manuka honey</strong>",
+            "text": "<p>The naturally potent healing clinically proven for treating wounds, harvested by our own bees in New Zealand.</p>",
             "link_label": "",
             "link": "",
             "card_style_dark": false
@@ -227,6 +277,7 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": true,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
         "text": "",
@@ -251,20 +302,20 @@
         "reviews_dadbnX": {
           "type": "reviews",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.32.56_AM.png",
+            "image": "shopify://shop_images/Screen_Shot_2024-05-24_at_11.32.56_AM.png",
             "title": "This is paw-some!",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "author": "<strong>Bess & Nacho<\/strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "author": "<strong>Bess & Nacho</strong>",
             "rating": "five"
           }
         },
         "reviews_HXjxhh": {
           "type": "reviews",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
+            "image": "shopify://shop_images/Screen_Shot_2024-05-24_at_11.33.14_AM.png",
             "title": "Paw saver",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "author": "<strong>Millie P<\/strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "author": "<strong>Millie P</strong>",
             "rating": "five"
           }
         }
@@ -298,9 +349,9 @@
         "column_R7DKTd": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/iStock-2151640323_4f27ca65-4b4e-49b0-9be8-8ae3d91bab98.png",
+            "image": "shopify://shop_images/iStock-2151640323_4f27ca65-4b4e-49b0-9be8-8ae3d91bab98.png",
             "title": "Heals",
-            "text": "<p><strong>Medical grade Manuka honey<\/strong><\/p><p>From the native New Zealand Manuka flower with gentle but powerful antibacterial properties.<\/p>",
+            "text": "<p><strong>Medical grade Manuka honey</strong></p><p>From the native New Zealand Manuka flower with gentle but powerful antibacterial properties.</p>",
             "link_label": "",
             "link": "",
             "card_style_dark": true
@@ -309,9 +360,9 @@
         "column_6RtkYL": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/GettyImages-1386753267.png",
+            "image": "shopify://shop_images/GettyImages-1386753267.png",
             "title": "Soothes",
-            "text": "<p>Proprietary blend of deeply moisturizing and nourishing cocoa and parkii butters with fortifying beeswax.<\/p>",
+            "text": "<p>Proprietary blend of deeply moisturizing and nourishing cocoa and parkii butters with fortifying beeswax.</p>",
             "link_label": "",
             "link": "",
             "card_style_dark": false
@@ -320,9 +371,9 @@
         "column_z7Cfyc": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/iStock-2151640323_a08f9699-7678-4639-8756-f99aea20a198.png",
+            "image": "shopify://shop_images/iStock-2151640323_a08f9699-7678-4639-8756-f99aea20a198.png",
             "title": "Protects",
-            "text": "<p><strong>Helianthus annus<\/strong><\/p><p>From the pressed seed meal of sunflower kernels with antioxidants and polyunsaturated fatty acids to replenish and protect.<\/p>",
+            "text": "<p><strong>Helianthus annus</strong></p><p>From the pressed seed meal of sunflower kernels with antioxidants and polyunsaturated fatty acids to replenish and protect.</p>",
             "link_label": "",
             "link": "",
             "card_style_dark": false
@@ -337,9 +388,10 @@
       "settings": {
         "card_style_overlay": true,
         "row_layout": false,
+        "justify_content": "start",
         "title": "",
         "heading_size": "h1",
-        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
         "text_style": "body",
         "image_width": "full",
         "image_ratio": "square",
@@ -359,7 +411,7 @@
       "type": "apps",
       "blocks": {
         "okendo_reviews_widget_FCcDwF": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify://apps/okendo/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}",
             "widget_type": "reviews_widget"
@@ -384,7 +436,7 @@
         "column_BWybcJ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/atanas-teodosiev-GvhSUEN-Lm8-unsplash_B_W.jpg",
+            "image": "shopify://shop_images/atanas-teodosiev-GvhSUEN-Lm8-unsplash_B_W.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -395,7 +447,7 @@
         "column_NY7Rr8": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-158800495-170667a_2_b2a65ea1-fdd4-4ea4-b936-51c821b9c8c4.jpg",
+            "image": "shopify://shop_images/gettyimages-158800495-170667a_2_b2a65ea1-fdd4-4ea4-b936-51c821b9c8c4.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -406,7 +458,7 @@
         "column_dwyNLm": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-200133470-001-170667a_5031e203-fd1c-4491-9d62-229e1092e3b1.jpg",
+            "image": "shopify://shop_images/gettyimages-200133470-001-170667a_5031e203-fd1c-4491-9d62-229e1092e3b1.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -417,7 +469,7 @@
         "column_kcXQxT": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gettyimages-878245220-170667a.jpg",
+            "image": "shopify://shop_images/gettyimages-878245220-170667a.jpg",
             "title": "",
             "text": "",
             "link_label": "",
@@ -435,9 +487,10 @@
       "settings": {
         "card_style_overlay": false,
         "row_layout": false,
+        "justify_content": "start",
         "title": "Show us your fur baby!",
         "heading_size": "h1",
-        "text": "<p>Tag us at @mokopet<\/p>",
+        "text": "<p>Tag us at @mokopet</p>",
         "text_style": "body",
         "image_width": "full",
         "image_ratio": "square",
@@ -476,6 +529,7 @@
   "order": [
     "main",
     "marquee_columns_mWCFpX",
+    "media_with_content_RXhpKD",
     "video_Ag73ee",
     "multicolumn_hNPPGA",
     "reviews_RmnwaC",
