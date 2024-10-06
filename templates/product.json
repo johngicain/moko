@@ -202,6 +202,9 @@
         "text_content_dHCGXQ",
         "collapsible_content_HChkWV"
       ],
+      "custom_css": [
+        ".multicolumn-list {row-gap: 0;}"
+      ],
       "settings": {
         "section_heading": "",
         "section_heading_size": "h0",
