@@ -1563,6 +1563,25 @@ body {
   }
 }
 
+.article-content {
+  padding: 0 1.5rem;
+  margin: auto;
+}
+
+.article-content .article-tags {
+  font-weight: bold;
+}
+
+.article-content .article-author {
+  font-size: 1.2rem;
+  margin: 2rem 0 3rem;
+}
+
+.article-content .author-name {
+  margin-bottom: 1rem;
+  display: block;
+}
+
 .footer-block--menu .footer-block__heading {
   padding: 1rem 0;
 }
