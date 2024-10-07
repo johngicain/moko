@@ -21,14 +21,9 @@
         "title": {
           "type": "title",
           "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "blog_show_date": false,
+            "blog_show_author": true,
+            "blog_show_custom_author": true
           }
         },
         "content": {
@@ -40,10 +35,12 @@
       "block_order": [
         "featured_image",
         "title",
-        "share",
         "content"
       ],
       "settings": {
+        "enable_standard_width": false,
+        "color_scheme": "scheme-7975deec-2ac9-4747-aa94-49852184ac36",
+        "padding_bottom": 40
       }
     },
     "multicolumn_9AiXTa": {
