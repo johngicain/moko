@@ -93,7 +93,7 @@
         "heading_size": "h1",
         "button_label": "Who we are",
         "button_link": "shopify://pages/about-us",
-        "blog": "blog-1",
+        "blog": "blog",
         "post_limit": 4,
         "columns_desktop": 3,
         "custom_image_float": "shopify://shop_images/image-greens-float.png",
