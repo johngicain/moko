@@ -89,11 +89,11 @@
       ],
       "settings": {
         "row_layout": true,
-        "heading": "Nurture you dog with the healing force of nature",
+        "heading": "Nurture your dog with the healing force of nature",
         "heading_size": "h1",
         "button_label": "Who we are",
         "button_link": "/pages/about",
-        "blog": "news",
+        "blog": "blog-1",
         "post_limit": 4,
         "columns_desktop": 3,
         "custom_image_float": "shopify://shop_images/image-greens-float.png",
