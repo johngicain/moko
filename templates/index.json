@@ -92,7 +92,7 @@
         "heading": "Nurture your dog with the healing force of nature",
         "heading_size": "h1",
         "button_label": "Who we are",
-        "button_link": "/pages/about",
+        "button_link": "shopify://pages/about-us",
         "blog": "blog-1",
         "post_limit": 4,
         "columns_desktop": 3,
