@@ -33,7 +33,7 @@
       ],
       "settings": {
         "blog": "blog",
-        "title": "Blog posts",
+        "title": "Blog",
         "heading_size": "h1",
         "blog_show_author": true,
         "blog_show_date": false,
