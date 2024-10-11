@@ -59,31 +59,33 @@
                   </div>
                 </div>
 
-                <div class="featured-blog-post__excerpt-item image-with-text__text-item content-item grid__item">
-                  <div class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container background-transparent">
-                    {%- if article.excerpt.size != blank -%}
-                      {%- if article.excerpt.size > 0 -%}
-                        <div class="image-with-text__text rte excerpt">
-                          {{ article.excerpt }}
+                {%- if section.settings.blog_show_excerpt -%}
+                  <div class="featured-blog-post__excerpt-item image-with-text__text-item content-item grid__item">
+                    <div class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container background-transparent">
+                      {%- if article.excerpt.size != blank -%}
+                        {%- if article.excerpt.size > 0 -%}
+                          <div class="image-with-text__text rte excerpt">
+                            {{ article.excerpt }}
+                          </div>
+                        {%- endif -%}
+                      {%- else -%}
+                        Insert excerpt in the Blog post admin.
+                        {% comment %} {{ article.content | truncate: 300 }} {% endcomment %}
+                      {%- endif -%}
+
+                      {% assign author = article.metafields.custom.author.value %}
+                      {%- if section.settings.blog_show_author -%}
+                        <div class="image-with-text__text rte author">
+                          <span class="author-name"><strong>{{ author.name }}</strong></span><br>
+                          <span class="author-title">{{ author.title }}</span>
                         </div>
                       {%- endif -%}
-                    {%- else -%}
-                      Insert excerpt in the Blog post admin.
-                      {% comment %} {{ article.content | truncate: 300 }} {% endcomment %}
-                    {%- endif -%}
-
-                    {% assign author = article.metafields.custom.author.value %}
-                    {%- if section.settings.blog_show_author -%}
-                      <div class="image-with-text__text rte author">
-                        <span class="author-name"><strong>{{ author.name }}</strong></span><br>
-                        <span class="author-title">{{ author.title }}</span>
-                      </div>
-                    {%- endif -%}
-                    <a href="{{ article.url }}" class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} mobile-display">
-                      {{ section.settings.button_label | escape }}
-                    </a>
+                      <a href="{{ article.url }}" class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} mobile-display">
+                        {{ section.settings.button_label | escape }}
+                      </a>
+                    </div>
                   </div>
-                </div>
+                {% endif %}
 
                 <div class="featured-blog-post__media-item grid__item">
                   <div
@@ -167,6 +169,12 @@
       "type": "checkbox",
       "id": "blog_show_date",
       "label": "Show date",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_excerpt",
+      "label": "Show excerpt",
       "default": true
     },
     {
