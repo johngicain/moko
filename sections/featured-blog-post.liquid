@@ -79,6 +79,10 @@
                           <span class="author-name"><strong>{{ author.name }}</strong></span><br>
                           <span class="author-title">{{ author.title }}</span>
                         </div>
+                      {%- else -%}
+                        <div class="image-with-text__text rte author">
+                          <span class="author-name"><strong>{{ article.author }}</strong></span><br>
+                        </div>
                       {%- endif -%}
                       <a href="{{ article.url }}" class="button{% if section.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} mobile-display">
                         {{ section.settings.button_label | escape }}
@@ -162,8 +166,8 @@
     {
       "type": "checkbox",
       "id": "blog_show_author",
-      "label": "Show author",
-      "default": false
+      "label": "Show custom author",
+      "default": true
     },
     {
       "type": "checkbox",
