@@ -260,178 +260,119 @@
                     </details>
                   </div> {% endcomment %}
                 {%- when 'text_content' -%}
-                  <div
-                    class="accordion accordion__text-content {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                    {{ block.shopify_attributes }}
-                  >
-                    <details
-                      id="Details-{{ block.id }}-{{ section.id }}"
-                      {% if section.settings.open_first_collapsible_row and forloop.first %}
-                        open
-                      {% endif %}
+                  <div id="Summary-{{ block.id }}-{{ section.id }}" class="accordion__title content-container color-{{ section.settings.container_color_scheme }} gradient">
+                    <h2
+                      class="inline-richtext {{ section.settings.heading_size }}"
+                      {{ block.shopify_attributes }}
                     >
-                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                        <h2
-                          class="accordion__title inline-richtext {{ section.settings.heading_size }}"
-                          {{ block.shopify_attributes }}
-                        >
-                          {{ block.settings.heading | default: block.settings.page.title | escape }}
-                        </h2>
-                        {% comment %} {% render 'icon-caret' %} {% endcomment %}
-                      </summary>
-                      <div
-                        class="accordion__content rte"
-                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                        role="region"
-                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                      >
-                        {{ block.settings.description }}
-                      </div>
-                    </details>
+                      {{ block.settings.heading | default: block.settings.page.title | escape }}
+                    </h2>
+                    {% comment %} {% render 'icon-caret' %} {% endcomment %}
+                  </div>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                  >
+                    {{ block.settings.description }}
                   </div>
                 {%- when 'collapsible_content' -%}
-                  <div
-                    class="accordion accordion__collapsible-content {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                    {{ block.shopify_attributes }}
-                  >
-                    <details
-                      id="Details-{{ block.id }}-{{ section.id }}"
-                      {% if section.settings.open_first_collapsible_row and forloop.first %}
-                        open
-                      {% endif %}
+                  <div id="Summary-{{ block.id }}-{{ section.id }}" class="accordion__title content-container color-{{ section.settings.container_color_scheme }} gradient">
+                    <h2
+                      class="inline-richtext {{ section.settings.heading_size }}"
+                      {{ block.shopify_attributes }}
                     >
-                      <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                        <h2
-                          class="accordion__title inline-richtext {{ section.settings.heading_size }}"
-                          {{ block.shopify_attributes }}
-                        >
-                          {{ block.settings.heading | default: block.settings.page.title | escape }}
-                        </h2>
-                        {% comment %} {% render 'icon-caret' %} {% endcomment %}
-                      </summary>
+                      {{ block.settings.heading | default: block.settings.page.title | escape }}
+                    </h2>
+                    {% comment %} {% render 'icon-caret' %} {% endcomment %}
+                  </div>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                  >
+                    {% if block.settings.row_heading_1 != blank %}
+                      <div id="Summary-{{ block.id }}-{{ section.id }}" class="accordion__sub-title content-container color-{{ section.settings.container_color_scheme }} gradient">
+                        <h3 class="inline-richtext h4">
+                          {{ block.settings.row_heading_1 | default: block.settings.page.title }}
+                        </h3>
+                        {% render 'icon-caret' %}
+                      </div>
                       <div
-                        class="accordion__content rte"
+                        class="accordion__sub-content rte"
                         id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
                         role="region"
                         aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                       >
-                        {% if block.settings.row_heading_1 != blank %}
-                          <div
-                            class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                            {{ block.shopify_attributes }}
-                          >
-                            <details id="Details-{{ block.id }}-{{ section.id }}">
-                              <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                                <h3 class="accordion__title inline-richtext h4">
-                                  {{ block.settings.row_heading_1 | default: block.settings.page.title }}
-                                </h3>
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <div
-                                class="accordion__content rte"
-                                id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                                role="region"
-                                aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                              >
-                                {{ block.settings.row_content_1 }}
-                              </div>
-                            </details>
-                          </div>
-                        {% endif %}
-                        {% if block.settings.row_heading_2 != blank %}
-                          <div
-                            class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                            {{ block.shopify_attributes }}
-                          >
-                            <details id="Details-{{ block.id }}-{{ section.id }}">
-                              <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                                <h3 class="accordion__title inline-richtext h4">
-                                  {{ block.settings.row_heading_2 | default: block.settings.page.title }}
-                                </h3>
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <div
-                                class="accordion__content rte"
-                                id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                                role="region"
-                                aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                              >
-                                {{ block.settings.row_content_2 }}
-                              </div>
-                            </details>
-                          </div>
-                        {% endif %}
-                        {% if block.settings.row_heading_3 != blank %}
-                          <div
-                            class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                            {{ block.shopify_attributes }}
-                          >
-                            <details id="Details-{{ block.id }}-{{ section.id }}">
-                              <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                                <h3 class="accordion__title inline-richtext h4">
-                                  {{ block.settings.row_heading_3 | default: block.settings.page.title }}
-                                </h3>
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <div
-                                class="accordion__content rte"
-                                id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                                role="region"
-                                aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                              >
-                                {{ block.settings.row_content_3 }}
-                              </div>
-                            </details>
-                          </div>
-                        {% endif %}
-                        {% if block.settings.row_heading_4 != blank %}
-                          <div
-                            class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                            {{ block.shopify_attributes }}
-                          >
-                            <details id="Details-{{ block.id }}-{{ section.id }}">
-                              <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                                <h3 class="accordion__title inline-richtext h4">
-                                  {{ block.settings.row_heading_4 | default: block.settings.page.title }}
-                                </h3>
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <div
-                                class="accordion__content rte"
-                                id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                                role="region"
-                                aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                              >
-                                {{ block.settings.row_content_4 }}
-                              </div>
-                            </details>
-                          </div>
-                        {% endif %}
-                        {% if block.settings.row_heading_5 != blank %}
-                          <div
-                            class="accordion{% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                            {{ block.shopify_attributes }}
-                          >
-                            <details id="Details-{{ block.id }}-{{ section.id }}">
-                              <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                                <h3 class="accordion__title inline-richtext h4">
-                                  {{ block.settings.row_heading_5 | default: block.settings.page.title }}
-                                </h3>
-                                {% render 'icon-caret' %}
-                              </summary>
-                              <div
-                                class="accordion__content rte"
-                                id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                                role="region"
-                                aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
-                              >
-                                {{ block.settings.row_content_5 }}
-                              </div>
-                            </details>
-                          </div>
-                        {% endif %}
+                        {{ block.settings.row_content_1 }}
                       </div>
-                    </details>
+                    {% endif %}
+                    {% if block.settings.row_heading_2 != blank %}
+                      <div id="Summary-{{ block.id }}-{{ section.id }}" class="accordion__sub-title content-container color-{{ section.settings.container_color_scheme }} gradient">
+                        <h3 class="inline-richtext h4">
+                          {{ block.settings.row_heading_2 | default: block.settings.page.title }}
+                        </h3>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <div
+                        class="accordion__sub-content rte"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ block.settings.row_content_2 }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.row_heading_3 != blank %}
+                      <div id="Summary-{{ block.id }}-{{ section.id }}" class="accordion__sub-title content-container color-{{ section.settings.container_color_scheme }} gradient">
+                        <h3 class="inline-richtext h4">
+                          {{ block.settings.row_heading_3 | default: block.settings.page.title }}
+                        </h3>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <div
+                        class="accordion__sub-content rte"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ block.settings.row_content_3 }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.row_heading_4 != blank %}
+                      <div id="Summary-{{ block.id }}-{{ section.id }}" class="accordion__sub-title content-container color-{{ section.settings.container_color_scheme }} gradient">
+                        <h3 class="inline-richtext h4">
+                          {{ block.settings.row_heading_4 | default: block.settings.page.title }}
+                        </h3>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <div
+                        class="accordion__sub-content rte"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ block.settings.row_content_4 }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.row_heading_5 != blank %}
+                      <div id="Summary-{{ block.id }}-{{ section.id }}" class="accordion__sub-title content-container color-{{ section.settings.container_color_scheme }} gradient">
+                        <h3 class="inline-richtext h4">
+                          {{ block.settings.row_heading_5 | default: block.settings.page.title }}
+                        </h3>
+                        {% render 'icon-caret' %}
+                      </div>
+                      <div
+                        class="accordion__sub-content rte"
+                        id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                      >
+                        {{ block.settings.row_content_5 }}
+                      </div>
+                    {% endif %}
                   </div>
               {%- endcase -%}
             {%- endfor -%}
@@ -441,6 +382,53 @@
     </div>
   </div>
 </div>
+
+<script>
+  function accordionContent() {
+    const acc = document.querySelectorAll(".accordion__title");
+    const panel = document.querySelectorAll('.accordion__content');
+
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        let setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+
+        if (setClasses) {
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+        }
+      }
+    }
+  }
+
+  function accordionSubContent() {
+    const accSub = document.querySelectorAll(".accordion__sub-title");
+    const panelSub = document.querySelectorAll('.accordion__sub-content');
+
+    for (let i = 0; i < accSub.length; i++) {
+      accSub[i].onclick = function() {
+        let setClasses = !this.classList.contains('active');
+        setClass(accSub, 'active', 'remove');
+        setClass(panelSub, 'show', 'remove');
+
+        if (setClasses) {
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+        }
+      }
+    }
+  }
+
+  accordionContent();
+  accordionSubContent();
+
+  function setClass(els, className, fnName) {
+    for (let i = 0; i < els.length; i++) {
+      els[i].classList[fnName](className);
+    }
+  }
+</script>
 
 {% schema %}
 {

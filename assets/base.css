@@ -649,7 +649,9 @@ summary {
   position: relative;
 }
 
-summary .icon-caret {
+summary .icon-caret,
+.accordion__title .icon-caret,
+.accordion__sub-title .icon-caret {
   position: absolute;
   height: 0.6rem;
   right: 1.5rem;
