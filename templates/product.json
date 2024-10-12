@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -165,12 +165,11 @@
     "media_with_content_RXhpKD": {
       "type": "media-with-content",
       "blocks": {
-        "video_content_jx9twj": {
-          "type": "video_content",
+        "text_content_Bx6eRN": {
+          "type": "text_content",
           "settings": {
-            "heading": "Collapsible row",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": ""
+            "heading": "Product details",
+            "description": "<p>This unique honey not only tastes incredible on its own but also pairs well with other wellness ingredients, and can be easily added to hot or cold beverages for daily wellness. Our Manuka honey contains no articular antibiotics, no added sugar, and is GMO-free and Glyphosate-free.</p><p>First Honey 600+ MGO is a superfood rich in color, taste, and texture. A natural source of Antioxidants, Probiotics, Vitamins & Minerals and scientifically proven to contain natural anti-inflammatory propeeties.</p>"
           }
         },
         "text_content_dHCGXQ": {
@@ -198,7 +197,7 @@
         }
       },
       "block_order": [
-        "video_content_jx9twj",
+        "text_content_Bx6eRN",
         "text_content_dHCGXQ",
         "collapsible_content_HChkWV"
       ],
@@ -210,6 +209,8 @@
         "section_heading_size": "h0",
         "desktop_heading_alignment": "center",
         "heading_size": "h1",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
         "image": "shopify://shop_images/MokoManukaPawBalmRENDER4.png",
         "height": "adapt",
         "desktop_image_width": "medium",
