@@ -114,6 +114,7 @@
         "column_fz6zMY": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Portland-branding-photographer-home-dog-86-min_9783571b-6755-486b-8c88-52de76881dd5.png",
             "title": "",
             "text": "<p>Bonded by nature.<br/>Powered by love.</p>",
             "link_label": "",
@@ -124,6 +125,7 @@
         "column_7bbz4X": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/clean-clinicals.png",
             "title": "",
             "text": "<p>Modern wellness for dogs rooted in the enduring wisdom of nature.</p>",
             "link_label": "",
@@ -134,6 +136,7 @@
         "column_EATyw9": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Screen_Shot_2024-05-06_at_3.14.24_PM.png",
             "title": "",
             "text": "<p>Clean clinicals meet wild ingredients.</p>",
             "link_label": "",
@@ -144,6 +147,7 @@
         "column_7LYdKh": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/lick_their_wounds.png",
             "title": "",
             "text": "<p>We can't link their wounds but we can give them our best.</p>",
             "link_label": "",
@@ -165,9 +169,9 @@
         "row_layout": true,
         "heading": "Nurture your dog with the healing force of nature",
         "heading_size": "h1",
-        "button_label": "Button label",
-        "button_link": "",
-        "image_ratio": "adapt",
+        "button_label": "Who we are",
+        "button_link": "shopify://pages/about-us",
+        "image_ratio": "square",
         "post_limit": 3,
         "columns_desktop": 3,
         "column_alignment": "left",
