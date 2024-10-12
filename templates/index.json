@@ -120,10 +120,43 @@
             "link": "",
             "card_style_dark": false
           }
+        },
+        "column_7bbz4X": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "card_style_dark": false
+          }
+        },
+        "column_EATyw9": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "card_style_dark": false
+          }
+        },
+        "column_7LYdKh": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "card_style_dark": false
+          }
         }
       },
       "block_order": [
-        "column_fz6zMY"
+        "column_fz6zMY",
+        "column_7bbz4X",
+        "column_EATyw9",
+        "column_7LYdKh"
       ],
       "custom_css": [
         ".blog__title {color: #aa785d;}"
