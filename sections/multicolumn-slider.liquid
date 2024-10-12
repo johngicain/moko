@@ -117,7 +117,7 @@
                   </div>
                 </div>
               {%- endif -%}
-              <div class="multicolumn-card__info {% if section.settings.card_style_overlay == true %}{% if block.settings.card_style_dark == true %}card__style--dark{% endif %}{% endif %}">
+              <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -383,12 +383,6 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "card_style_dark",
-          "default": false,
-          "label": "Enable dark mode"
         }
       ]
     }
