@@ -1050,11 +1050,15 @@ body {
   width: 100%;
 }
 
-.multicolumn-slider .multicolumn-card__image-wrapper {
-}
-
 .multicolumn-slider .multicolumn-card__info {
   padding: 1.5rem 0;
+}
+
+.multicolumn-slider .multicolumn-card__info h3 {
+  margin: 1rem 0;
+}
+
+.multicolumn-slider .multicolumn-card__info div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1064,10 +1068,6 @@ body {
 .multicolumn-slider .multicolumn-card__info .rte {
   width: 70%;
 }
-
-/* .image-with-text__content--small .image-with-text__heading {
-  line-height: 3.2rem;
-} */
 
 .multicolumn__title {
   flex-direction: column;
