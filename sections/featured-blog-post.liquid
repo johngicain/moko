@@ -42,9 +42,11 @@
                 {%- endunless -%}
                 <div class="featured-blog-post__heading-item image-with-text__text-item heading-item grid__item">
                   <div class="image-with-text__content image-with-text__content--{{ section.settings.desktop_content_position }} image-with-text__content--desktop-{{ section.settings.desktop_content_alignment }} image-with-text__content--mobile-{{ section.settings.mobile_content_alignment }} image-with-text__content--{{ section.settings.height }} content-container background-transparent">
-                    <p class="image-with-text__text image-with-text__text--caption subtitle {{ section.settings.text_style }} {{ section.settings.text_style }}--{{ section.settings.text_size }} {{ section.settings.text_style }}">
-                      {{ blog.title }}
-                    </p>
+                    {% for tag in article.tags %}
+                      <p class="image-with-text__text image-with-text__text--caption subtitle {{ section.settings.text_style }} {{ section.settings.text_style }}--{{ section.settings.text_size }} {{ section.settings.text_style }}">
+                        {{ tag }}
+                      </p>
+                    {% endfor %}
                     <div class="image-with-text__heading inline-richtext {{ section.settings.heading_size }}">
                       {{ article.title }}
                     </div>

@@ -1336,6 +1336,10 @@ body {
   padding: 0 1rem;
 }
 
+.title-mobile {
+  max-width: 70%;
+}
+
 .video-section .tablet-display,
 .mobile-display {
   display: flex;
@@ -1351,6 +1355,10 @@ body {
 }
 
 @media screen and (min-width: 750px) {
+  .title-mobile {
+    max-width: 100%;
+  }
+
   .mobile-display {
     display: none;
   }
